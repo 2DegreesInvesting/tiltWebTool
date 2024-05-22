@@ -1,2 +1,11 @@
+^renv$
+^renv\.lock$
 ^tiltWebTool\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
+^app\.R$
