@@ -6,10 +6,6 @@
 weight from interactive controls, and then further from the filter box that
 the table provides (#13).
 
-# tiltWebTool 0.0.0.9002 (2024-05-27)
-
-* The package (not yet the app) now has toy datasets `emissions` and `sector`.
-
 # tiltWebTool 0.0.0.9001 (2024-05-27)
 
 * The app now has the input-selectors that are general valid. For now it avoids
