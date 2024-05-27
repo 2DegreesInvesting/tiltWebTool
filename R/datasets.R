@@ -11,4 +11,3 @@ NULL
 "emissions"
 #' @rdname datasets
 "sector"
-
