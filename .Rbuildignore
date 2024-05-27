@@ -9,3 +9,4 @@
 ^pkgdown$
 ^\.github$
 ^app\.R$
+^data-raw$
