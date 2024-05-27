@@ -3,5 +3,16 @@
 
 ## usethis namespace: start
 #' @import shiny
+#' @importFrom dplyr select
+#' @importFrom tidyselect all_of
+#' @importFrom tidyselect matches
 ## usethis namespace: end
 NULL
+
+#' @export
+#' @importFrom tiltIndicator unnest_product
+tiltIndicator::unnest_product
+
+#' @export
+#' @importFrom tiltIndicator unnest_company
+tiltIndicator::unnest_company
