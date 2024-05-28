@@ -11,8 +11,8 @@ dictionary <- function() {
     # `colClasses` makes it do less work (so faster)
     # https://adv-r.hadley.nz/perf-improve.html#be-lazy
     read.table(
-      header = TRUE,
       dic_url(),
+      header = TRUE,
       colClasses = "character",
       sep = "\t"
     )
