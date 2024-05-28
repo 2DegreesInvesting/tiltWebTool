@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9004 (2024-05-28)
+
+* The app now has a dictionary, powered by the `dictionary()` function in the 
+package (#31).
+
 # tiltWebTool 0.0.0.9003 (2024-05-27)
 
 * The app now includes toy datasets that can be filtered by indicator, level, and
