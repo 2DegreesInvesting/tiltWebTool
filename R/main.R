@@ -11,13 +11,19 @@ main <- function() {
 
   ui <- fluidPage(
     fluidRow(
+      tags$h1("Select inputs"),
       # TODO: Move details elsewhere
       column(4, selectInput("indicator", "Indicator", choices = c("emissions", "sector"))),
       column(4, selectInput("level", "Level", choices = c("product", "company"))),
       column(4, selectInput("weight", "Weight", choices = weight_choices()))
     ),
     fluidRow(
-      column(12, dataTableOutput("dataset")),
+      tags$h1("Filtered data"),
+      column(12, DT::DTOutput("dataset")),
+    ),
+    fluidRow(
+      tags$h1("Data dictionary"),
+      column(12, DT::DTOutput("dictionary")),
     )
   )
 
@@ -36,6 +42,8 @@ main <- function() {
     })
 
     output$dataset <- renderDataTable(dataset())
+
+    output$dictionary <- renderDataTable(dictionary())
   }
 
   shinyApp(ui, server)

@@ -18,10 +18,9 @@ browser.
 ``` r
 library(tibble)
 library(tiltWebTool)
-library(tiltDevTools)
 
 packageVersion("tiltWebTool")
-#> [1] '0.0.0.9001'
+#> [1] '0.0.0.9003'
 ```
 
 ``` r
@@ -45,58 +44,6 @@ emissions
 
 ``` r
 
-emissions |> 
-  tiltDevTools::use_dictionary() |> 
-  print(n = Inf)
-#> # A tibble: 42 × 5
-#>    dataset   level   name                               type      definition
-#>    <chr>     <chr>   <chr>                              <chr>     <chr>     
-#>  1 emissions product companies_id                       character <NA>      
-#>  2 emissions product company_name                       character <NA>      
-#>  3 emissions product country                            character <NA>      
-#>  4 emissions product emission_profile                   character <NA>      
-#>  5 emissions product benchmark                          character <NA>      
-#>  6 emissions product ep_product                         character <NA>      
-#>  7 emissions product matched_activity_name              character <NA>      
-#>  8 emissions product matched_reference_product          character <NA>      
-#>  9 emissions product unit                               character <NA>      
-#> 10 emissions product multi_match                        logical   <NA>      
-#> 11 emissions product matching_certainty                 character <NA>      
-#> 12 emissions product matching_certainty_company_average character <NA>      
-#> 13 emissions product tilt_sector                        character <NA>      
-#> 14 emissions product tilt_subsector                     character <NA>      
-#> 15 emissions product isic_4digit                        character <NA>      
-#> 16 emissions product isic_4digit_name                   character <NA>      
-#> 17 emissions product company_city                       character <NA>      
-#> 18 emissions product postcode                           character <NA>      
-#> 19 emissions product address                            character <NA>      
-#> 20 emissions product main_activity                      character <NA>      
-#> 21 emissions product activity_uuid_product_uuid         character <NA>      
-#> 22 emissions product profile_ranking                    double    <NA>      
-#> 23 emissions product ei_geography                       character <NA>      
-#> 24 emissions product co2e_lower                         double    <NA>      
-#> 25 emissions product co2e_upper                         double    <NA>      
-#> 26 emissions product amount_of_distinct_products        integer   <NA>      
-#> 27 emissions product equal_weight                       double    <NA>      
-#> 28 emissions product best_case                          double    <NA>      
-#> 29 emissions product worst_case                         double    <NA>      
-#> 30 emissions company companies_id                       character <NA>      
-#> 31 emissions company company_name                       character <NA>      
-#> 32 emissions company country                            character <NA>      
-#> 33 emissions company emission_profile_share             double    <NA>      
-#> 34 emissions company emission_profile                   character <NA>      
-#> 35 emissions company benchmark                          character <NA>      
-#> 36 emissions company matching_certainty_company_average character <NA>      
-#> 37 emissions company company_city                       character <NA>      
-#> 38 emissions company postcode                           character <NA>      
-#> 39 emissions company address                            character <NA>      
-#> 40 emissions company main_activity                      character <NA>      
-#> 41 emissions company profile_ranking_avg                double    <NA>      
-#> 42 emissions company co2_avg                            double    <NA>
-```
-
-``` r
-
 sector
 #> # A tibble: 72 × 3
 #>    companies_id                       product           company           
@@ -116,49 +63,19 @@ sector
 
 ``` r
 
-sector |> 
-  tiltDevTools::use_dictionary() |> 
-  print(n = Inf)
-#> # A tibble: 39 × 5
-#>    dataset level   name                               type      definition
-#>    <chr>   <chr>   <chr>                              <chr>     <chr>     
-#>  1 sector  product companies_id                       character <NA>      
-#>  2 sector  product company_name                       character <NA>      
-#>  3 sector  product country                            character <NA>      
-#>  4 sector  product sector_profile                     character <NA>      
-#>  5 sector  product reduction_targets                  double    <NA>      
-#>  6 sector  product scenario                           character <NA>      
-#>  7 sector  product year                               double    <NA>      
-#>  8 sector  product ep_product                         character <NA>      
-#>  9 sector  product matched_activity_name              character <NA>      
-#> 10 sector  product matched_reference_product          character <NA>      
-#> 11 sector  product unit                               character <NA>      
-#> 12 sector  product tilt_sector                        character <NA>      
-#> 13 sector  product tilt_subsector                     character <NA>      
-#> 14 sector  product multi_match                        logical   <NA>      
-#> 15 sector  product matching_certainty                 character <NA>      
-#> 16 sector  product matching_certainty_company_average character <NA>      
-#> 17 sector  product company_city                       character <NA>      
-#> 18 sector  product postcode                           character <NA>      
-#> 19 sector  product address                            character <NA>      
-#> 20 sector  product main_activity                      character <NA>      
-#> 21 sector  product activity_uuid_product_uuid         character <NA>      
-#> 22 sector  product isic_4digit                        character <NA>      
-#> 23 sector  product sector_scenario                    character <NA>      
-#> 24 sector  product subsector_scenario                 character <NA>      
-#> 25 sector  product ei_geography                       character <NA>      
-#> 26 sector  product isic_4digit_name                   character <NA>      
-#> 27 sector  company companies_id                       character <NA>      
-#> 28 sector  company company_name                       character <NA>      
-#> 29 sector  company country                            character <NA>      
-#> 30 sector  company sector_profile_share               double    <NA>      
-#> 31 sector  company sector_profile                     character <NA>      
-#> 32 sector  company scenario                           character <NA>      
-#> 33 sector  company year                               character <NA>      
-#> 34 sector  company matching_certainty_company_average character <NA>      
-#> 35 sector  company company_city                       character <NA>      
-#> 36 sector  company postcode                           character <NA>      
-#> 37 sector  company address                            character <NA>      
-#> 38 sector  company main_activity                      character <NA>      
-#> 39 sector  company reduction_targets_avg              double    <NA>
+dictionary()
+#> # A tibble: 81 × 5
+#>    dataset   level   name                      type      definition 
+#>    <chr>     <chr>   <chr>                     <chr>     <chr>      
+#>  1 emissions product companies_id              character coming soon
+#>  2 emissions product company_name              character coming soon
+#>  3 emissions product country                   character coming soon
+#>  4 emissions product emission_profile          character coming soon
+#>  5 emissions product benchmark                 character coming soon
+#>  6 emissions product ep_product                character coming soon
+#>  7 emissions product matched_activity_name     character coming soon
+#>  8 emissions product matched_reference_product character coming soon
+#>  9 emissions product unit                      character coming soon
+#> 10 emissions product multi_match               logical   coming soon
+#> # ℹ 71 more rows
 ```

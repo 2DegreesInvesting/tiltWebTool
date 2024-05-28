@@ -13,9 +13,12 @@ Depends:
     R (>= 2.10)
 Imports: 
     dplyr,
+    DT,
     shiny,
+    tibble,
     tidyselect,
-    tiltIndicator
+    tiltIndicator,
+    utils
 Suggests: 
     pkgload,
     testthat (>= 3.0.0),
