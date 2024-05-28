@@ -28,19 +28,14 @@ The goal of tiltWebTool is to help you use tilt software from the web browser.
 library(tibble)
 library(tiltWebTool)
 library(tiltDevTools)
+library(googlesheets4)
 
 packageVersion("tiltWebTool")
 
 emissions
 
-emissions |> 
-  tiltDevTools::use_dictionary() |> 
-  print(n = Inf)
-
 sector
 
-sector |> 
-  tiltDevTools::use_dictionary() |> 
-  print(n = Inf)
+read_sheet(dictionary_url())
 ```
 
