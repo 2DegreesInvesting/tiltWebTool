@@ -4,4 +4,3 @@ library(googlesheets4)
 
 emissions <- tiltWebTool::emissions
 sector <- tiltWebTool::sector
-

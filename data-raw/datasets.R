@@ -1,10 +1,14 @@
+library(readr)
+library(googlesheets4)
+library(tiltDevTools)
+library(tiltIndicatorAfter)
+library(tiltToyData)
+
 # Examples from:
 # https://2degreesinvesting.github.io/tiltIndicatorAfter/reference/profile_emissions_upstream.html#ref-examples
 # https://2degreesinvesting.github.io/tiltIndicatorAfter/reference/profile_sector_upstream.html#ref-examples
-
 version <- "0.0.0.9042"
 pak::pak(glue::glue("2degreesinvesting/tiltIndicatorAfter@v{version}"))
-library(tiltIndicatorAfter)
 expected <- packageVersion("tiltIndicatorAfter") == version
 if (!expected) {
   rlang::abort(c(
@@ -12,9 +16,6 @@ if (!expected) {
     i = "Do you need to install that version, or update the `version` variable?"
   ))
 }
-
-library(tiltToyData)
-library(readr, warn.conflicts = FALSE)
 
 withr::local_seed(1)
 
@@ -61,3 +62,6 @@ dictionary <- dplyr::bind_rows(list(
 
 usethis::use_data(dictionary, overwrite = TRUE)
 
+ver <- packageVersion("tiltWebTool")
+name <- glue::glue("dictionary-tiltWebTool-v{ver}")
+gs4_create(name, sheets = dictionary)
