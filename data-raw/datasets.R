@@ -60,8 +60,6 @@ dictionary <- dplyr::bind_rows(list(
   sector |> use_dictionary()
 ))
 
-usethis::use_data(dictionary, overwrite = TRUE)
-
 ver <- packageVersion("tiltWebTool")
 name <- glue::glue("dictionary-tiltWebTool-v{ver}")
 gs4_create(name, sheets = dictionary)
