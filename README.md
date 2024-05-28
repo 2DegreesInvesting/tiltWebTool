@@ -18,11 +18,6 @@ browser.
 ``` r
 library(tibble)
 library(tiltWebTool)
-devtools::load_all()
-#> ℹ Loading tiltWebTool
-```
-
-``` r
 library(googlesheets4)
 
 packageVersion("tiltWebTool")

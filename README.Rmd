@@ -27,7 +27,6 @@ The goal of tiltWebTool is to help you use tilt software from the web browser.
 ```{r}
 library(tibble)
 library(tiltWebTool)
-devtools::load_all()
 library(googlesheets4)
 
 packageVersion("tiltWebTool")
