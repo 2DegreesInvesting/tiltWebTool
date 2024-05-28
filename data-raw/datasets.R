@@ -53,3 +53,11 @@ sector <- profile_sector(
 )
 
 usethis::use_data(sector, overwrite = TRUE)
+
+dictionary <- dplyr::bind_rows(list(
+  emissions |> use_dictionary(),
+  sector |> use_dictionary()
+))
+
+usethis::use_data(dictionary, overwrite = TRUE)
+
