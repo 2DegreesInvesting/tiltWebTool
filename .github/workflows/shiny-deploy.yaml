@@ -24,10 +24,6 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
-      - name: Update renv.lock
-        run: renv::snapshot()
-        shell: Rscript {0}
-
       - name: Install rsconnect
         run: install.packages("rsconnect")
         shell: Rscript {0}
