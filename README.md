@@ -18,7 +18,6 @@ browser.
 ``` r
 library(tibble)
 library(tiltWebTool)
-library(googlesheets4)
 
 packageVersion("tiltWebTool")
 #> [1] '0.0.0.9003'
