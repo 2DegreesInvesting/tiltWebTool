@@ -1,7 +1,9 @@
 #' Dictionary
 #'
-#' Edit at: `r dic_edit_url()`.
-#' Published at: `r dic_publish_url()`.
+#' @description
+#' URLs:
+#' * Edit at: `r dic_edit_url()`
+#' * Published at: `r dic_publish_url()`
 #'
 #' @return Character
 #' @export
