@@ -72,10 +72,9 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/2DegreesInvesting/tiltWebTool" class="external-link">tiltWebTool</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/2DegreesInvesting/tiltDevTools" class="external-link">tiltDevTools</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/packageDescription.html" class="external-link">packageVersion</a></span><span class="op">(</span><span class="st">"tiltWebTool"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] '0.0.0.9001'</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] '0.0.0.9003'</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="va">emissions</span></span>
@@ -95,56 +94,6 @@
 <span><span class="co">#&gt; # ℹ 62 more rows</span></span></code></pre></div>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
-<span><span class="va">emissions</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">tiltDevTools</span><span class="fu">::</span><span class="fu"><a href="https://maurolepore.github.io/rsetools/reference/use_dictionary.html" class="external-link">use_dictionary</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="cn">Inf</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 42 × 5</span></span>
-<span><span class="co">#&gt;    dataset   level   name                               type      definition</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;                              &lt;chr&gt;     &lt;chr&gt;     </span></span>
-<span><span class="co">#&gt;  1 emissions product companies_id                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  2 emissions product company_name                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  3 emissions product country                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  4 emissions product emission_profile                   character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  5 emissions product benchmark                          character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  6 emissions product ep_product                         character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  7 emissions product matched_activity_name              character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  8 emissions product matched_reference_product          character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  9 emissions product unit                               character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 10 emissions product multi_match                        logical   &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 11 emissions product matching_certainty                 character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 12 emissions product matching_certainty_company_average character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 13 emissions product tilt_sector                        character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 14 emissions product tilt_subsector                     character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 15 emissions product isic_4digit                        character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 16 emissions product isic_4digit_name                   character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 17 emissions product company_city                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 18 emissions product postcode                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 19 emissions product address                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 20 emissions product main_activity                      character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 21 emissions product activity_uuid_product_uuid         character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 22 emissions product profile_ranking                    double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 23 emissions product ei_geography                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 24 emissions product co2e_lower                         double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 25 emissions product co2e_upper                         double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 26 emissions product amount_of_distinct_products        integer   &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 27 emissions product equal_weight                       double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 28 emissions product best_case                          double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 29 emissions product worst_case                         double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 30 emissions company companies_id                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 31 emissions company company_name                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 32 emissions company country                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 33 emissions company emission_profile_share             double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 34 emissions company emission_profile                   character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 35 emissions company benchmark                          character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 36 emissions company matching_certainty_company_average character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 37 emissions company company_city                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 38 emissions company postcode                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 39 emissions company address                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 40 emissions company main_activity                      character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 41 emissions company profile_ranking_avg                double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 42 emissions company co2_avg                            double    &lt;NA&gt;</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span></span>
 <span><span class="va">sector</span></span>
 <span><span class="co">#&gt; # A tibble: 72 × 3</span></span>
 <span><span class="co">#&gt;    companies_id                       product           company           </span></span>
@@ -160,53 +109,23 @@
 <span><span class="co">#&gt;  9 fascist_maiasaura                  &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
 <span><span class="co">#&gt; 10 charismatic_islandwhistler         &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
 <span><span class="co">#&gt; # ℹ 62 more rows</span></span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
-<span><span class="va">sector</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">tiltDevTools</span><span class="fu">::</span><span class="fu"><a href="https://maurolepore.github.io/rsetools/reference/use_dictionary.html" class="external-link">use_dictionary</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="cn">Inf</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 39 × 5</span></span>
-<span><span class="co">#&gt;    dataset level   name                               type      definition</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;                              &lt;chr&gt;     &lt;chr&gt;     </span></span>
-<span><span class="co">#&gt;  1 sector  product companies_id                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  2 sector  product company_name                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  3 sector  product country                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  4 sector  product sector_profile                     character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  5 sector  product reduction_targets                  double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  6 sector  product scenario                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  7 sector  product year                               double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  8 sector  product ep_product                         character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt;  9 sector  product matched_activity_name              character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 10 sector  product matched_reference_product          character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 11 sector  product unit                               character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 12 sector  product tilt_sector                        character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 13 sector  product tilt_subsector                     character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 14 sector  product multi_match                        logical   &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 15 sector  product matching_certainty                 character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 16 sector  product matching_certainty_company_average character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 17 sector  product company_city                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 18 sector  product postcode                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 19 sector  product address                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 20 sector  product main_activity                      character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 21 sector  product activity_uuid_product_uuid         character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 22 sector  product isic_4digit                        character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 23 sector  product sector_scenario                    character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 24 sector  product subsector_scenario                 character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 25 sector  product ei_geography                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 26 sector  product isic_4digit_name                   character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 27 sector  company companies_id                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 28 sector  company company_name                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 29 sector  company country                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 30 sector  company sector_profile_share               double    &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 31 sector  company sector_profile                     character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 32 sector  company scenario                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 33 sector  company year                               character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 34 sector  company matching_certainty_company_average character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 35 sector  company company_city                       character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 36 sector  company postcode                           character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 37 sector  company address                            character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 38 sector  company main_activity                      character &lt;NA&gt;      </span></span>
-<span><span class="co">#&gt; 39 sector  company reduction_targets_avg              double    &lt;NA&gt;</span></span></code></pre></div>
+<span><span class="fu"><a href="reference/dictionary.html">dictionary</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 81 × 5</span></span>
+<span><span class="co">#&gt;    dataset   level   name                      type      definition </span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;                     &lt;chr&gt;     &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt;  1 emissions product companies_id              character coming soon</span></span>
+<span><span class="co">#&gt;  2 emissions product company_name              character coming soon</span></span>
+<span><span class="co">#&gt;  3 emissions product country                   character coming soon</span></span>
+<span><span class="co">#&gt;  4 emissions product emission_profile          character coming soon</span></span>
+<span><span class="co">#&gt;  5 emissions product benchmark                 character coming soon</span></span>
+<span><span class="co">#&gt;  6 emissions product ep_product                character coming soon</span></span>
+<span><span class="co">#&gt;  7 emissions product matched_activity_name     character coming soon</span></span>
+<span><span class="co">#&gt;  8 emissions product matched_reference_product character coming soon</span></span>
+<span><span class="co">#&gt;  9 emissions product unit                      character coming soon</span></span>
+<span><span class="co">#&gt; 10 emissions product multi_match               logical   coming soon</span></span>
+<span><span class="co">#&gt; # ℹ 71 more rows</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
