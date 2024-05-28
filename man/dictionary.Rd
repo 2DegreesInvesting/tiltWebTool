@@ -13,5 +13,7 @@ Character
 The URL where we collaboratively define columns
 }
 \examples{
+\dontshow{if (FALSE) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 dictionary()
+\dontshow{\}) # examplesIf}
 }
