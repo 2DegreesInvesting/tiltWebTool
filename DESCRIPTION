@@ -21,6 +21,7 @@ Imports:
     utils
 Suggests: 
     pkgload,
+    spelling,
     testthat (>= 3.0.0),
     tiltDevTools (>= 0.0.0.9009)
 Remotes: 
