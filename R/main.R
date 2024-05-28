@@ -17,7 +17,7 @@ main <- function() {
       column(4, selectInput("weight", "Weight", choices = weight_choices()))
     ),
     fluidRow(
-      column(12, dataTableOutput("dataset")),
+      column(12, DT::DTOutput("dataset")),
     )
   )
 

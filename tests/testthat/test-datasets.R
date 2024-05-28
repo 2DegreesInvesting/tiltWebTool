@@ -4,6 +4,4 @@ test_that("have the expected size and shape", {
   expect_snapshot(emissions)
 
   expect_snapshot(sector)
-
-  expect_snapshot(dictionary)
 })
