@@ -15,8 +15,10 @@ Imports:
     dplyr,
     DT,
     shiny,
+    tibble,
     tidyselect,
-    tiltIndicator
+    tiltIndicator,
+    utils
 Suggests: 
     pkgload,
     testthat (>= 3.0.0),

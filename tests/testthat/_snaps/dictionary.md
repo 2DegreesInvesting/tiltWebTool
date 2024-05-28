@@ -3,18 +3,86 @@
     Code
       dictionary()
     Output
-      # A tibble: 81 x 5
-         dataset   level   name                      type      definition
-         <chr>     <chr>   <chr>                     <chr>     <chr>     
-       1 emissions product companies_id              character "TODO"    
-       2 emissions product company_name              character ""        
-       3 emissions product country                   character ""        
-       4 emissions product emission_profile          character ""        
-       5 emissions product benchmark                 character ""        
-       6 emissions product ep_product                character ""        
-       7 emissions product matched_activity_name     character ""        
-       8 emissions product matched_reference_product character ""        
-       9 emissions product unit                      character ""        
-      10 emissions product multi_match               logical   ""        
-      # i 71 more rows
+           dataset   level                               name      type definition
+      1  emissions product                       companies_id character       TODO
+      2  emissions product                       company_name character           
+      3  emissions product                            country character           
+      4  emissions product                   emission_profile character           
+      5  emissions product                          benchmark character           
+      6  emissions product                         ep_product character           
+      7  emissions product              matched_activity_name character           
+      8  emissions product          matched_reference_product character           
+      9  emissions product                               unit character           
+      10 emissions product                        multi_match   logical           
+      11 emissions product                 matching_certainty character           
+      12 emissions product matching_certainty_company_average character           
+      13 emissions product                        tilt_sector character           
+      14 emissions product                     tilt_subsector character           
+      15 emissions product                        isic_4digit character           
+      16 emissions product                   isic_4digit_name character           
+      17 emissions product                       company_city character           
+      18 emissions product                           postcode character           
+      19 emissions product                            address character           
+      20 emissions product                      main_activity character           
+      21 emissions product         activity_uuid_product_uuid character           
+      22 emissions product                    profile_ranking    double           
+      23 emissions product                       ei_geography character           
+      24 emissions product                         co2e_lower    double           
+      25 emissions product                         co2e_upper    double           
+      26 emissions product        amount_of_distinct_products   integer           
+      27 emissions product                       equal_weight    double           
+      28 emissions product                          best_case    double           
+      29 emissions product                         worst_case    double           
+      30 emissions company                       companies_id character           
+      31 emissions company                       company_name character           
+      32 emissions company                            country character           
+      33 emissions company             emission_profile_share    double           
+      34 emissions company                   emission_profile character           
+      35 emissions company                          benchmark character           
+      36 emissions company matching_certainty_company_average character           
+      37 emissions company                       company_city character           
+      38 emissions company                           postcode character           
+      39 emissions company                            address character           
+      40 emissions company                      main_activity character           
+      41 emissions company                profile_ranking_avg    double           
+      42 emissions company                            co2_avg    double           
+      43    sector product                       companies_id character           
+      44    sector product                       company_name character           
+      45    sector product                            country character           
+      46    sector product                     sector_profile character           
+      47    sector product                  reduction_targets    double           
+      48    sector product                           scenario character           
+      49    sector product                               year    double           
+      50    sector product                         ep_product character           
+      51    sector product              matched_activity_name character           
+      52    sector product          matched_reference_product character           
+      53    sector product                               unit character           
+      54    sector product                        tilt_sector character           
+      55    sector product                     tilt_subsector character           
+      56    sector product                        multi_match   logical           
+      57    sector product                 matching_certainty character           
+      58    sector product matching_certainty_company_average character           
+      59    sector product                       company_city character           
+      60    sector product                           postcode character           
+      61    sector product                            address character           
+      62    sector product                      main_activity character           
+      63    sector product         activity_uuid_product_uuid character           
+      64    sector product                        isic_4digit character           
+      65    sector product                    sector_scenario character           
+      66    sector product                 subsector_scenario character           
+      67    sector product                       ei_geography character           
+      68    sector product                   isic_4digit_name character           
+      69    sector company                       companies_id character           
+      70    sector company                       company_name character           
+      71    sector company                            country character           
+      72    sector company               sector_profile_share    double           
+      73    sector company                     sector_profile character           
+      74    sector company                           scenario character           
+      75    sector company                               year character           
+      76    sector company matching_certainty_company_average character           
+      77    sector company                       company_city character           
+      78    sector company                           postcode character           
+      79    sector company                            address character           
+      80    sector company                      main_activity character           
+      81    sector company              reduction_targets_avg    double           
 

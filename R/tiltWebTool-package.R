@@ -6,6 +6,7 @@
 #' @importFrom dplyr select
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect matches
+#' @importFrom utils read.table
 ## usethis namespace: end
 NULL
 
