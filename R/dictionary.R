@@ -1,19 +1,3 @@
-#' Dictionary
-#'
-#' @return Character
-#' @export
-#'
-#' @examplesIf FALSE
-#' # Edit the dictionary here
-#' dictionary_edit() |> browseURL()
-#'
-#' # Your edits are automatically published here
-#' dictionary_url("web") |> browseURL()
-#'
-#' # You can read it as a "csv"
-#' dictionary_url("csv") |>
-#'   read.csv() |>
-#'   head()
 dictionary_url <- function(type = c("web", "csv")) {
   type <- match.arg(type)
 
