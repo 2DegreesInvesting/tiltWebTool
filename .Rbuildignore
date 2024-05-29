@@ -10,3 +10,4 @@
 ^\.github$
 ^app\.R$
 ^data-raw$
+^\.renvignore$
