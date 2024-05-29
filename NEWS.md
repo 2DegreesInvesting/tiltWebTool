@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9008 (2024-05-29)
+
+* Download filtered by indicator and level.
+
 # tiltWebTool 0.0.0.9007 (2024-05-29)
 
 INTERNAL

@@ -8,11 +8,12 @@ main <- function() {
     ),
     fluidRow(
       tags$h1("Filtered data"),
-      column(12, DT::DTOutput("dataset")),
+      downloadButton("download", "Download .tsv"),
+      DT::DTOutput("dataset")
     ),
     fluidRow(
       tags$h1("Data dictionary"),
-      column(12, DT::DTOutput("dictionary")),
+      DT::DTOutput("dictionary")
     )
   )
 
@@ -30,9 +31,18 @@ main <- function() {
         select(-matches(unselected_choices(input$weight)))
     })
 
-    output$dataset <- renderDataTable(dataset())
+    output$dataset <- DT::renderDT(dataset())
 
-    output$dictionary <- renderDataTable(dictionary())
+    output$download <- downloadHandler(
+      filename = function() {
+        time_stamp(paste0(input$indicator, "_", input$level, ".tsv"))
+      },
+      content = function(file) {
+        readr::write_tsv(dataset(), file)
+      }
+    )
+
+    output$dictionary <- DT::renderDT(dictionary())
   }
 
   shinyApp(ui, server)
