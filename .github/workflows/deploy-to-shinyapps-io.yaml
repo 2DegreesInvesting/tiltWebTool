@@ -22,6 +22,8 @@ jobs:
         with:
           use-public-rspm: true
 
+      - uses: r-lib/actions/setup-r-dependencies@v2
+
       - name: Install rsconnect
         run: install.packages("rsconnect")
         shell: Rscript {0}
