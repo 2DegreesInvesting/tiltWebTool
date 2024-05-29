@@ -31,7 +31,7 @@ main <- function() {
         select(-matches(unselected_choices(input$weight)))
     })
 
-    output$dataset <- renderDataTable(dataset())
+    output$dataset <- DT::renderDT(dataset())
 
     output$download <- downloadHandler(
       filename = function() {
@@ -42,7 +42,7 @@ main <- function() {
       }
     )
 
-    output$dictionary <- renderDataTable(dictionary())
+    output$dictionary <- DT::renderDT(dictionary())
   }
 
   shinyApp(ui, server)
