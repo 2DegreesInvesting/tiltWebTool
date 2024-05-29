@@ -38,7 +38,7 @@ main <- function() {
         time_stamp(paste0(input$indicator, "_", input$level, ".tsv"))
       },
       content = function(file) {
-        vroom::vroom_write(dataset(), file)
+        readr::write_tsv(dataset(), file)
       }
     )
 
