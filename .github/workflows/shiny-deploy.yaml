@@ -22,14 +22,6 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install renv
-        run: install.packages("renv")
-        shell: Rscript {0}
-
-      - name: Snapshot dependencies
-        run: renv::snapshot()
-        shell: Rscript {0}
-
       - uses: r-lib/actions/setup-renv@v2
 
       - name: Install rsconnect
