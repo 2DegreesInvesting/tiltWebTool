@@ -1,5 +1,5 @@
 dictionary <- function() {
-  read.csv(dictionary_url("csv"), colClasses = "character")
+  utils::read.csv(dictionary_url("csv"), colClasses = "character")
 }
 
 dictionary_url <- function(type = c("web", "csv")) {
