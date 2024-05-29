@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9005 (2024-05-29)
+
+INTERNAL
+
+* New helpers to work with the dictionary.
+
 # tiltWebTool 0.0.0.9004 (2024-05-28)
 
 * The app now has a dictionary, powered by the `dictionary()` function in the 
