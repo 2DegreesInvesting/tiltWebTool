@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9006 (2024-05-29)
+
+INTERNAL
+
+* New UI helpers.
+
 # tiltWebTool 0.0.0.9005 (2024-05-29)
 
 INTERNAL

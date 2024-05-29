@@ -1,21 +1,10 @@
 main <- function() {
-  # TODO: Move elsewhere
-  unselected_choices <- function(choice) {
-    grep(choice, weight_choices(), invert = TRUE, value = TRUE)
-  }
-
-  weight_choices <- function() {
-    c("equal_weight", "best_case", "worst_case")
-  }
-
-
   ui <- fluidPage(
     fluidRow(
       tags$h1("Select inputs"),
-      # TODO: Move details elsewhere
-      column(4, selectInput("indicator", "Indicator", choices = c("emissions", "sector"))),
-      column(4, selectInput("level", "Level", choices = c("product", "company"))),
-      column(4, selectInput("weight", "Weight", choices = weight_choices()))
+      column(4, selectChoices("indicator")),
+      column(4, selectChoices("level")),
+      column(4, selectChoices("weight"))
     ),
     fluidRow(
       tags$h1("Filtered data"),
