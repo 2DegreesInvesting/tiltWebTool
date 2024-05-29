@@ -15,7 +15,6 @@ Imports:
     dplyr,
     DT,
     shiny,
-    tibble,
     tidyselect,
     tiltIndicator,
     utils
@@ -23,6 +22,7 @@ Suggests:
     pkgload,
     spelling,
     testthat (>= 3.0.0),
+    tibble,
     tiltDevTools (>= 0.0.0.9009)
 Remotes: 
     2DegreesInvesting/tiltDevTools

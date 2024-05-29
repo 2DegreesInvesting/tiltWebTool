@@ -26,14 +26,19 @@ The goal of tiltWebTool is to help you use tilt software from the web browser.
 
 ```{r}
 library(tibble)
-library(tiltWebTool)
 
+devtools::load_all()
 packageVersion("tiltWebTool")
 
 emissions
 
 sector
-
-dictionary()
 ```
 
+### Dictionary
+
+```{r}
+dictionary_url("csv") |> read.csv()
+```
+
+Edit at: `r dictionary_edit()`

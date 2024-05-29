@@ -1,5 +1,8 @@
-test_that("hasn't changed", {
-  skip_if_offline()
+test_that("is sensitive to `type`", {
+  expect_true(endsWith(dictionary_url("web"), "true"))
+  expect_true(endsWith(dictionary_url("csv"), "csv"))
+})
 
-  expect_snapshot(print(dictionary(), n = Inf))
+test_that("errors gracefully", {
+  expect_snapshot(error = TRUE, dictionary_url("bad"))
 })

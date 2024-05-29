@@ -20,10 +20,6 @@ main <- function() {
     fluidRow(
       tags$h1("Filtered data"),
       column(12, DT::DTOutput("dataset")),
-    ),
-    fluidRow(
-      tags$h1("Data dictionary"),
-      column(12, DT::DTOutput("dictionary")),
     )
   )
 
@@ -42,8 +38,6 @@ main <- function() {
     })
 
     output$dataset <- renderDataTable(dataset())
-
-    output$dictionary <- renderDataTable(dictionary())
   }
 
   shinyApp(ui, server)
