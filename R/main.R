@@ -19,7 +19,17 @@ main <- function() {
     ),
     fluidRow(
       tags$h1("Filtered data"),
-      column(12, DT::DTOutput("dataset")),
+      column(12, DT::DTOutput("dataset"))
+    ),
+    fluidRow(
+      tags$h1("Dictionary"),
+    # https://shiny.posit.co/r/articles/build/tag-glossary/
+      shiny::tags$iframe(
+        # seamless = NA,
+        # width=600,
+        # height=500,
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpeL37_DinYYKaQNKWdjL0oKU_VrEKMDBN1dBfBpO6AgSyHLTt8WiiXFojcbPclsPTE0VliDWvRKxh/pubhtml?widget=true&amp;headers=false"
+      )
     )
   )
 
