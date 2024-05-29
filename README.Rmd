@@ -26,14 +26,15 @@ The goal of tiltWebTool is to help you use tilt software from the web browser.
 
 ```{r}
 library(tibble)
-library(tiltWebTool)
 
+devtools::load_all()
 packageVersion("tiltWebTool")
 
 emissions
 
 sector
-
-dictionary()
 ```
 
+### Dictionary
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpeL37_DinYYKaQNKWdjL0oKU_VrEKMDBN1dBfBpO6AgSyHLTt8WiiXFojcbPclsPTE0VliDWvRKxh/pubhtml?widget=true&amp;headers=false" width=600 height=500></iframe>
