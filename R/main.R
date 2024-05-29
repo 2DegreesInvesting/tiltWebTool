@@ -8,12 +8,12 @@ main <- function() {
     ),
     fluidRow(
       tags$h1("Filtered data"),
-      column(4, downloadButton("download", "Download .tsv")),
-      column(12, DT::DTOutput("dataset")),
+      downloadButton("download", "Download .tsv"),
+      DT::DTOutput("dataset")
     ),
     fluidRow(
       tags$h1("Data dictionary"),
-      column(12, DT::DTOutput("dictionary")),
+      DT::DTOutput("dictionary")
     )
   )
 
