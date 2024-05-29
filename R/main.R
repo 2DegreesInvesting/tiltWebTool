@@ -8,6 +8,7 @@ main <- function() {
     ),
     fluidRow(
       tags$h1("Filtered data"),
+      column(4, downloadButton("download", "Download .tsv")),
       column(12, DT::DTOutput("dataset")),
     ),
     fluidRow(
@@ -31,6 +32,15 @@ main <- function() {
     })
 
     output$dataset <- renderDataTable(dataset())
+
+    output$download <- downloadHandler(
+      filename = function() {
+        time_stamp(paste0(input$indicator, "_", input$level, ".tsv"))
+      },
+      content = function(file) {
+        vroom::vroom_write(dataset(), file)
+      }
+    )
 
     output$dictionary <- renderDataTable(dictionary())
   }
