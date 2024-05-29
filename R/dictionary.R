@@ -13,8 +13,6 @@ web_url <- function() {
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpeL37_DinYYKaQNKWdjL0oKU_VrEKMDBN1dBfBpO6AgSyHLTt8WiiXFojcbPclsPTE0VliDWvRKxh/pub?gid=105958234&single=true"
 }
 
-#' @export
-#' @rdname dictionary_url
 dictionary_edit <- function() {
   "https://docs.google.com/spreadsheets/d/1gOZRS9_0yUgR7UXgsf4WmDoAEXfUQy3Mz0MZM1Xvv40/edit#gid=105958234"
 }
