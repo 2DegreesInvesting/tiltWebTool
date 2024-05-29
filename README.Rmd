@@ -37,8 +37,4 @@ sector
 
 ### Dictionary
 
-```{r}
-dictionary_url("csv") |> read.csv()
-```
-
-Edit at: `r dictionary_edit()`
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpeL37_DinYYKaQNKWdjL0oKU_VrEKMDBN1dBfBpO6AgSyHLTt8WiiXFojcbPclsPTE0VliDWvRKxh/pubhtml?widget=true&amp;headers=false" width=600 height=500></iframe>
