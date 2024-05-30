@@ -28,13 +28,29 @@ jobs:
         run: install.packages("rsconnect")
         shell: Rscript {0}
 
-      - name: Authorize and deploy app
+      - name: Authorize, deploy to staging, and on success deploy to production
+        env:
+          # Provide your app name, account name, and server to be deployed below
+          APPNAME: tiltwebtool-staging
+          ACCOUNT: mauro-2dii
+          SERVER: shinyapps.io # server to deploy
+        run: |
+          rsconnect::setAccountInfo("${{ secrets.RSCONNECT_USER }}", "${{ secrets.RSCONNECT_TOKEN }}", "${{ secrets.RSCONNECT_SECRET }}")
+          rsconnect::deployApp(appName = "${{ env.APPNAME }}", account = "${{ env.ACCOUNT }}", server = "${{ env.SERVER }}", forceUpdate = TRUE)
+        shell: Rscript {0}
+
+      - name: Authorize and deploy to production
         env:
           # Provide your app name, account name, and server to be deployed below
           APPNAME: tiltwebtool
           ACCOUNT: mauro-2dii
           SERVER: shinyapps.io # server to deploy
         run: |
+          # Bad response stops deployment to production
+          install.packages("httr2")
+          staging_url <- "https://mauro-2dii.shinyapps.io/tiltwebtool-staging/"
+          httr2::req_perform(httr2::request(staging_url))
+
           rsconnect::setAccountInfo("${{ secrets.RSCONNECT_USER }}", "${{ secrets.RSCONNECT_TOKEN }}", "${{ secrets.RSCONNECT_SECRET }}")
           rsconnect::deployApp(appName = "${{ env.APPNAME }}", account = "${{ env.ACCOUNT }}", server = "${{ env.SERVER }}", forceUpdate = TRUE)
         shell: Rscript {0}
