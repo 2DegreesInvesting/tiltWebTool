@@ -169,7 +169,7 @@
     },
     "SparseM": {
       "Package": "SparseM",
-      "Version": "1.83",
+      "Version": "1.81",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -179,7 +179,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "f2b9f6a10ac6bc136be10c508ee890f9"
+      "Hash": "2042cd9759cc89a453c4aefef0ce9aae"
     },
     "abind": {
       "Package": "abind",
@@ -215,13 +215,13 @@
     },
     "backports": {
       "Package": "backports",
-      "Version": "1.5.0",
+      "Version": "1.4.1",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
-      "Hash": "e1e1b9d75c37401117b636b7ae50827a"
+      "Hash": "c39fbec8a30d23e721980b8afb31984c"
     },
     "base64enc": {
       "Package": "base64enc",
@@ -958,7 +958,7 @@
     },
     "ggsci": {
       "Package": "ggsci",
-      "Version": "3.1.0",
+      "Version": "3.0.3",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -967,7 +967,7 @@
         "grDevices",
         "scales"
       ],
-      "Hash": "0c811246e30e146acd92da02bfdbb22a"
+      "Hash": "3516e3ebb6dd31756844ab6bbcbe32cc"
     },
     "ggsignif": {
       "Package": "ggsignif",
@@ -999,19 +999,18 @@
     },
     "giscoR": {
       "Package": "giscoR",
-      "Version": "0.5.0",
+      "Version": "0.4.2",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R",
         "countrycode",
         "geojsonsf",
-        "jsonlite",
         "rappdirs",
         "sf",
         "utils"
       ],
-      "Hash": "82f0dc889504b5b7393f9b10f23feaa4"
+      "Hash": "0a78b5b22bfffcd1768e7177ba1a474b"
     },
     "gitcreds": {
       "Package": "gitcreds",
@@ -1232,9 +1231,9 @@
     },
     "knitr": {
       "Package": "knitr",
-      "Version": "1.47",
+      "Version": "1.46",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "https://packagemanager.posit.co/cran/__linux__/noble/2024-04-29",
       "Requirements": [
         "R",
         "evaluate",
@@ -1244,7 +1243,7 @@
         "xfun",
         "yaml"
       ],
-      "Hash": "7c99b2d55584b982717fcc0950378612"
+      "Hash": "6e008ab1d696a5283c79765fa7b56b47"
     },
     "labeling": {
       "Package": "labeling",
@@ -1730,7 +1729,7 @@
     },
     "quantreg": {
       "Package": "quantreg",
-      "Version": "5.98",
+      "Version": "5.97",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -1744,7 +1743,7 @@
         "stats",
         "survival"
       ],
-      "Hash": "017561f17632c065388b7062da030952"
+      "Hash": "1bbc97f7d637ab3917c514a69047b2c1"
     },
     "ragg": {
       "Package": "ragg",
