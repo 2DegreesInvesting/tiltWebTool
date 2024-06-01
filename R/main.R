@@ -14,19 +14,25 @@ main <- function() {
     fluidRow(
       tags$h1("Data dictionary"),
       DT::DTOutput("dictionary")
+    ),
+    fluidRow(
+      tags$h1("Plot"),
+      plotOutput("plot")
     )
   )
 
   server <- function(input, output, session) {
     # TODO extract as function
     dataset <- reactive({
-      req(input$indicator, input$level, input$weight)
+      req(input$indicator)
+      req(input$level)
+      req(input$weight)
 
       # TODO Extract function
       tilt_profile <- get(input$indicator, "package:tiltWebTool")
       unnest_level <- get(paste0("unnest_", input$level))
 
-      tilt_profile |>
+      out <- tilt_profile |>
         unnest_level() |>
         select(-matches(unselected_choices(input$weight)))
     })
@@ -43,6 +49,16 @@ main <- function() {
     )
 
     output$dictionary <- DT::renderDT(dictionary())
+
+    # TODO: Refactor
+    # TODO: Add react to input$benchmark
+    output$plot <- renderPlot({
+      req(input$indicator == "emissions", input$level == "product")
+
+      # TODO: input$benchmarks
+      benchmarks <- reactive(unique(dataset()$benchmark))
+      tiltPlot::bar_plot_emission_profile(dataset(), benchmarks())
+    })
   }
 
   shinyApp(ui, server)
