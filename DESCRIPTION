@@ -1,6 +1,6 @@
 Package: tiltWebTool
 Title: Web Tool
-Version: 0.0.0.9009
+Version: 0.0.0.9010
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
@@ -18,6 +18,7 @@ Imports:
     shiny,
     tidyselect,
     tiltIndicator,
+    tiltPlot (>= 0.0.0.9001),
     utils
 Suggests: 
     pkgload,
@@ -26,7 +27,8 @@ Suggests:
     tibble,
     tiltDevTools (>= 0.0.0.9009)
 Remotes: 
-    2DegreesInvesting/tiltDevTools
+    2DegreesInvesting/tiltDevTools,
+    2degreesinvesting/tiltPlot
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true

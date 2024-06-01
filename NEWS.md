@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9010 (2024-06-01)
+
+* New bar plot when user selects emissions data at product level, showing all
+benchmarks (#26).
+
 # tiltWebTool 0.0.0.9009 (2024-05-30)
 
 * The app now deploys to production only if staging looks OK (#33).
