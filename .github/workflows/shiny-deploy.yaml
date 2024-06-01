@@ -24,9 +24,6 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
-      - name: Install system requirements
-        run: sudo apt-get upddate && sudo apt-get install libudunits2-dev libgdal-dev libgeos-dev libproj-dev
-
       - name: Install rsconnect
         run: install.packages("rsconnect")
         shell: Rscript {0}
