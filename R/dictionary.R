@@ -1,5 +1,4 @@
 dictionary <- function() {
-  # TODO: For now just hard code it here as a tribble
   utils::read.csv(dictionary_url("csv"), colClasses = "character")
 }
 
