@@ -1,10 +1,5 @@
 library(dplyr)
 library(ggplot2)
-#
-# data <- tidyr::expand_grid(
-#   benchmark = c("all", "unit"),
-#   emission_profile = c("high", "medium", "low")
-# )
 
 data <- expand.grid(
   benchmark = c("all", "unit"),
