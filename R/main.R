@@ -56,8 +56,10 @@ main <- function() {
       req(input$indicator == "emissions", input$level == "product")
 
       # TODO: input$benchmarks
-      benchmarks <- reactive(unique(dataset()$benchmark))
-      tiltPlot::bar_plot_emission_profile(dataset(), benchmarks())
+      proportion <- reactive({
+        summary_of_by(dataset(), "emission_profile", by = "benchmark")
+      })
+      barplot_of_by(proportion(), "emission_profile", by = "benchmark")
     })
   }
 

@@ -14,11 +14,11 @@ Depends:
 Imports: 
     dplyr,
     DT,
+    ggplot2,
     readr,
     shiny,
     tidyselect,
     tiltIndicator,
-    tiltPlot (>= 0.0.0.9001),
     utils
 Suggests: 
     pkgload,
@@ -27,8 +27,7 @@ Suggests:
     tibble,
     tiltDevTools (>= 0.0.0.9009)
 Remotes: 
-    2DegreesInvesting/tiltDevTools,
-    2degreesinvesting/tiltPlot
+    2DegreesInvesting/tiltDevTools
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
