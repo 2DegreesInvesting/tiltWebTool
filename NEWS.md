@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9011 (2024-06-02)
+
+* Remove dependency on tiltPlot to simplify deployment.
+
 # tiltWebTool 0.0.0.9010 (2024-06-01)
 
 * New bar plot when user selects emissions data at product level, showing all

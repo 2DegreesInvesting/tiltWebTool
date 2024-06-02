@@ -3,7 +3,18 @@
 
 ## usethis namespace: start
 #' @import shiny
+#' @importFrom dplyr .data
+#' @importFrom dplyr group_by
+#' @importFrom dplyr mutate
+#' @importFrom dplyr n
 #' @importFrom dplyr select
+#' @importFrom dplyr summarise
+#' @importFrom dplyr summarize
+#' @importFrom dplyr ungroup
+#' @importFrom ggplot2 aes
+#' @importFrom ggplot2 geom_col
+#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 position_stack
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect matches
 #' @importFrom utils read.table
