@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9018 (2024-06-06)
+
+* Move app version to the end.
+
 # tiltWebTool 0.0.0.9017 (2024-06-06)
 
 * Use minty bslib theme.
