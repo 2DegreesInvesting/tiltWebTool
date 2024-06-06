@@ -4,9 +4,9 @@
 
 TODO
 
-- [ ] Link related issue/PR.
+- [ ] Update renv.lock.
 - [ ] Increment version.
 - [ ] Update changelog.
+- [ ] Link related issue/PR.
 - [ ] Review diff.
-- [ ] Update renv.lock.
-- [ ] Enable auto-merge.
+
