@@ -12,6 +12,7 @@ BugReports: https://github.com/2DegreesInvesting/tiltWebTool/issues
 Depends: 
     R (>= 2.10)
 Imports: 
+    bslib,
     dplyr,
     DT,
     ggplot2,
@@ -26,10 +27,10 @@ Suggests:
     spelling,
     testthat (>= 3.0.0),
     tibble
+Remotes: 
+    2DegreesInvesting/tiltIndicator
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-Remotes: 
-    2DegreesInvesting/tiltIndicator
