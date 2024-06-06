@@ -2,6 +2,7 @@ dictionary <- utils::read.csv(dictionary_url("csv"), colClasses = "character")
 
 main <- function() {
   ui <- fluidPage(
+    theme = theme_app(),
     fluidRow(
       tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool"))),
       tags$h1("Select inputs"),

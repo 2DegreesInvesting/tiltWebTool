@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9017 (2024-06-06)
+
+* Use minty bslib theme.
+
 # tiltWebTool 0.0.0.9016 (2024-06-06)
 
 * The dictionary is now read from the source GoogleSheet when we build the app,
