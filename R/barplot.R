@@ -10,5 +10,8 @@ summary_of_by <- function(data, of, by) {
 barplot_of_by <- function(data, of, by) {
   data |>
     ggplot(aes(x = .data$proportion, y = .data[[by]], fill = .data[[of]])) +
-    geom_col(position = position_stack(reverse = TRUE))
+    geom_col(position = position_stack(reverse = TRUE), width = width_bar()) +
+    fill_score_colors() +
+    theme_tiltplot() +
+    xlim(0, 1)
 }
