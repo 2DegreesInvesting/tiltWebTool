@@ -4,11 +4,10 @@ main <- function() {
   ui <- fluidPage(
     theme = theme_app(),
     fluidRow(
-      tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool"))),
       tags$h1("Select inputs"),
       column(4, selectChoices("indicator")),
       column(4, selectChoices("level")),
-      column(4, selectChoices("weight"))
+      column(4, selectChoices("weight")),
     ),
     fluidRow(
       tags$h1("Filtered data"),
@@ -22,6 +21,9 @@ main <- function() {
     fluidRow(
       tags$h1("Plot"),
       plotOutput("plot")
+    ),
+    fluidRow(
+      tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool")))
     )
   )
 
