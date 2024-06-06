@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9015 (2024-06-06)
+
+* Use tilt theme (#FIXME).
+
 # tiltWebTool 0.0.0.9014 (2024-06-06)
 
 * The app now shows the version of tiltWebTool (#53).
