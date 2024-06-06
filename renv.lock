@@ -1527,7 +1527,7 @@
     },
     "tiltIndicator": {
       "Package": "tiltIndicator",
-      "Version": "0.0.0.9223",
+      "Version": "0.0.0.9224",
       "Source": "GitHub",
       "Remotes": "2degreesinvesting/tiltToyData",
       "RemoteType": "github",
@@ -1536,7 +1536,7 @@
       "RemoteUsername": "2DegreesInvesting",
       "RemotePkgRef": "2DegreesInvesting/tiltIndicator",
       "RemoteRef": "HEAD",
-      "RemoteSha": "c4ef750a3131222d32f492def154ca0483a6fa52",
+      "RemoteSha": "4ed9a3d8cffd0db37a9fc8b7e24cab65c53b0e40",
       "Requirements": [
         "R",
         "dplyr",
@@ -1558,7 +1558,7 @@
         "vctrs",
         "withr"
       ],
-      "Hash": "3215fb06d3609950b815742119ac4920"
+      "Hash": "089411f0203c2087316d0c353439f093"
     },
     "tiltToyData": {
       "Package": "tiltToyData",
