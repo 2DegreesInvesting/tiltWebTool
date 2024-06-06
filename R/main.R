@@ -1,3 +1,5 @@
+dictionary <- utils::read.csv(dictionary_url("csv"), colClasses = "character")
+
 main <- function() {
   ui <- fluidPage(
     fluidRow(
@@ -49,7 +51,7 @@ main <- function() {
       }
     )
 
-    output$dictionary <- DT::renderDT(dictionary())
+    output$dictionary <- DT::renderDT(dictionary)
 
     # TODO: Refactor
     # TODO: Add react to input$benchmark
