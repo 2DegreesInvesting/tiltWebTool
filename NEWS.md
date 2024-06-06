@@ -2,7 +2,7 @@
 
 # tiltWebTool 0.0.0.9015 (2024-06-06)
 
-* Use tilt theme (#FIXME).
+* Use tilt theme (#62).
 
 # tiltWebTool 0.0.0.9014 (2024-06-06)
 
