@@ -1,6 +1,6 @@
 Package: tiltWebTool
 Title: Web Tool
-Version: 0.0.0.9011
+Version: 0.0.0.9012
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
@@ -18,18 +18,17 @@ Imports:
     readr,
     shiny,
     tidyselect,
-    tiltIndicator,
+    tiltIndicator (>= 0.0.0.9224),
     utils
 Suggests: 
     pkgload,
     spelling,
     testthat (>= 3.0.0),
-    tibble,
-    tiltDevTools (>= 0.0.0.9009)
-Remotes: 
-    2DegreesInvesting/tiltDevTools
+    tibble
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Remotes: 
+    2DegreesInvesting/tiltIndicator
