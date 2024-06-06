@@ -1,6 +1,7 @@
 main <- function() {
   ui <- fluidPage(
     fluidRow(
+      tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool"))),
       tags$h1("Select inputs"),
       column(4, selectChoices("indicator")),
       column(4, selectChoices("level")),
