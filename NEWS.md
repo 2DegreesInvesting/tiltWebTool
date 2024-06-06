@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9016 (2024-06-06)
+
+* The dictionary is now read from the source GoogleSheet when we build the app,
+not when the user runs it. This makes the app snappier (#55).
+
 # tiltWebTool 0.0.0.9015 (2024-06-06)
 
 * Use tilt theme (#62).
