@@ -2,7 +2,7 @@
 
 # tiltWebTool 0.0.0.9012 (2024-06-06)
 
-* Refactor.
+* Remove examples left-behind in R/.
 
 # tiltWebTool 0.0.0.9011 (2024-06-02)
 
