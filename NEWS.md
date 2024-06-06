@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9013 (2024-06-06)
+
+* Update PR checklist.
+
 # tiltWebTool 0.0.0.9012 (2024-06-06)
 
 * Remove examples left-behind in R/.
