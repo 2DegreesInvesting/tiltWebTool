@@ -1,6 +1,10 @@
-selectChoices <- function(id) {
+selectChoices <- function(id, details = NULL) {
   choices <- get(paste0(id, "_choices"))
-  selectInput(id, tools::toTitleCase(id), choices = choices())
+  selectInput(
+    id,
+    paste(tools::toTitleCase(id), details),
+    choices = choices()
+  )
 }
 
 indicator_choices <- function() {
