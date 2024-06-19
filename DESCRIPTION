@@ -20,8 +20,7 @@ Imports:
     readr,
     shiny,
     tidyselect,
-    tiltIndicator (>= 0.0.0.9224),
-    utils
+    tiltIndicator (>= 0.0.0.9224)
 Suggests: 
     pkgload,
     spelling,
