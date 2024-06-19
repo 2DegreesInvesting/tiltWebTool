@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9019 (2024-06-19)
+
+* The 'Weight' selector now has a more detailed label (#27).
+
 # tiltWebTool 0.0.0.9018 (2024-06-06)
 
 * Move app version to the end.

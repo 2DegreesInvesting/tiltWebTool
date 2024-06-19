@@ -7,7 +7,7 @@ main <- function() {
       tags$h1("Select inputs"),
       column(4, selectChoices("indicator")),
       column(4, selectChoices("level")),
-      column(4, selectChoices("weight")),
+      column(4, selectChoices("weight", "(only at product level)")),
     ),
     fluidRow(
       tags$h1("Filtered data"),
