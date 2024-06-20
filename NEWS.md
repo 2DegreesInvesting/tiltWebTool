@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9022 (2024-06-20)
+
+* `theme_tiltplot()` is now retired from the public API (#72).
+
 # tiltWebTool 0.0.0.9021 (2024-06-20)
 
 * Deploy to shinyapps.io with `r-version: 'renv'` for maintenability.
