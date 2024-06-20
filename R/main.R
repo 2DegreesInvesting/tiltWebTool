@@ -28,6 +28,8 @@ main <- function() {
   )
 
   server <- function(input, output, session) {
+    bslib::bs_themer()
+
     # TODO extract as function
     dataset <- reactive({
       req(input$indicator)
