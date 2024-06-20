@@ -1,14 +1,3 @@
-#' TiltPlot theme for the graphs
-#'
-#' @return An object of class "theme", "gg".
-#' @export
-#'
-#' @examples
-#' library(ggplot2, warn.conflicts = FALSE)
-#'
-#' ggplot(mtcars) +
-#'   geom_histogram(aes(mpg), bins = 10) +
-#'   theme_tiltplot()
 theme_tiltplot <- function() {
   theme_classic() +
     theme(
