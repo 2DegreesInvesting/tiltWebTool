@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9021 (2024-06-20)
+
+* Deploy to shinyapps.io with `r-version: 'renv'` for maintenability.
+
 # tiltWebTool 0.0.0.9020 (2024-06-20)
 
 * Deploy to shinyapps.io with R 4.4.0 to avoid [Unsopported R version 4.4.1](https://forum.posit.co/t/unsuported-r-verion-4-4-1-on-shinyapps-io/188270/3).
