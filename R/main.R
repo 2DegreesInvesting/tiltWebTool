@@ -19,10 +19,6 @@ main <- function() {
       DT::DTOutput("dictionary")
     ),
     fluidRow(
-      tags$h1("Plot"),
-      plotOutput("plot")
-    ),
-    fluidRow(
       tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool")))
     )
   )
@@ -57,18 +53,6 @@ main <- function() {
     )
 
     output$dictionary <- DT::renderDT(dictionary)
-
-    # TODO: Refactor
-    # TODO: Add react to input$benchmark
-    output$plot <- renderPlot({
-      req(input$indicator == "emissions", input$level == "product")
-
-      # TODO: input$benchmarks
-      proportion <- reactive({
-        summary_of_by(dataset(), "emission_profile", by = "benchmark")
-      })
-      barplot_of_by(proportion(), "emission_profile", by = "benchmark")
-    })
   }
 
   shinyApp(ui, server)

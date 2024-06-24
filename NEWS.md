@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9024 (2024-06-24)
+
+* The app no longer includes plots (#76).
+
 # tiltWebTool 0.0.0.9023 (2024-06-20)
 
 * Allow changing theme, colours, fonts, etc. on the fly (#74).

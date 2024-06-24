@@ -1,6 +1,6 @@
 Package: tiltWebTool
 Title: Web Tool
-Version: 0.0.0.9023
+Version: 0.0.0.9024
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
@@ -15,8 +15,6 @@ Imports:
     bslib,
     dplyr,
     DT,
-    ggplot2,
-    grDevices,
     readr,
     shiny,
     tidyselect,
