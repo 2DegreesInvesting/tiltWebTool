@@ -2,8 +2,8 @@
 "_PACKAGE"
 
 ## usethis namespace: start
-#' @import shiny
 #' @import bslib
+#' @import shiny
 #' @importFrom dplyr .data
 #' @importFrom dplyr group_by
 #' @importFrom dplyr mutate
@@ -12,6 +12,7 @@
 #' @importFrom dplyr summarise
 #' @importFrom dplyr summarize
 #' @importFrom dplyr ungroup
+#' @importFrom DT DTOutput
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect matches
 #' @importFrom utils packageVersion

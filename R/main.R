@@ -4,10 +4,11 @@ main <- function() {
     theme = theme(),
     selected = fmt_title(disclaimer_id()),
     nav_panel(title = fmt_title(welcome_id()), card(welcome_text())),
-    nav_panel(title = fmt_title(dataset_id()), card(
-      layout_sidebar(sidebar = side_bar(), card(DT::DTOutput(dataset_id())))
-    )),
-    nav_panel(title = fmt_title(dictionary_id()), card(DT::DTOutput(dictionary_id()))),
+    nav_panel(title = fmt_title(dataset_id()), card(layout_sidebar(
+      sidebar = side_bar(),
+      card(DTOutput(dataset_id()))
+    ))),
+    nav_panel(title = fmt_title(dictionary_id()), card(DTOutput(dictionary_id()))),
     nav_spacer(),
     nav_panel(title = fmt_title(disclaimer_id()), card(disclaimer_text())),
   )
