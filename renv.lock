@@ -670,6 +670,19 @@
       ],
       "Hash": "b8552d117e1b808b09a832f589b79035"
     },
+    "lorem": {
+      "Package": "lorem",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "htmltools",
+        "knitr",
+        "stats"
+      ],
+      "Hash": "7784700efa54d1c2ed98fa6755e8bb32"
+    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "2.0.3",
