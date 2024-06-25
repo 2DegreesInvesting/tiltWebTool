@@ -1,14 +1,18 @@
 main <- function() {
   ui <- page_navbar(
+    selected = "Disclaimer",
     title = "tilt",
-    nav_panel("Disclaimer", card(lorem::ipsum_words(150))),
     nav_panel("Welcome", card(lorem::ipsum_words(80))),
-    nav_panel("Dataset", card(layout_sidebar(
-      sidebar = dataset_sidebar(),
-      card(DT::DTOutput("dataset"))
-    ))),
+    nav_panel("Dataset", card(
+      layout_sidebar(
+        sidebar = dataset_sidebar(),
+        card(DT::DTOutput("dataset"))
+        )
+      )
+    ),
+    nav_panel(title = "Dictionary", card(DT::DTOutput("dictionary"))),
     nav_spacer(),
-    nav_panel(title = "Dictionary", card(DT::DTOutput("dictionary")))
+    nav_panel("Disclaimer", card(lorem::ipsum_words(150)))
   )
 
   server <- function(input, output, session) {
