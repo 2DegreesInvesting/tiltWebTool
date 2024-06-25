@@ -1,4 +1,4 @@
-dataset_sidebar <- function() {
+side_bar <- function() {
   sidebar(
     selectChoices("indicator"),
     selectChoices("level"),

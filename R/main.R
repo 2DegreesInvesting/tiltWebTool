@@ -1,15 +1,15 @@
 main <- function() {
   ui <- page_navbar(
-    selected = "Disclaimer",
     title = "tilt",
+    theme = theme(),
+    selected = "Disclaimer",
     nav_panel("Welcome", card(lorem::ipsum_words(80))),
     nav_panel("Dataset", card(
       layout_sidebar(
-        sidebar = dataset_sidebar(),
+        sidebar = side_bar(),
         card(DT::DTOutput("dataset"))
-        )
       )
-    ),
+    )),
     nav_panel(title = "Dictionary", card(DT::DTOutput("dictionary"))),
     nav_spacer(),
     nav_panel("Disclaimer", card(lorem::ipsum_words(150)))
