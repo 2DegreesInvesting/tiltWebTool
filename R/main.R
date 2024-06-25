@@ -2,17 +2,13 @@ main <- function() {
   ui <- page_navbar(
     title = "tilt",
     theme = theme(),
-    selected = "Disclaimer",
-    nav_panel("Welcome", card(lorem::ipsum_words(80))),
-    nav_panel("Dataset", card(
-      layout_sidebar(
-        sidebar = side_bar(),
-        card(DT::DTOutput("dataset"))
-      )
-    )),
-    nav_panel(title = "Dictionary", card(DT::DTOutput("dictionary"))),
+    selected = fmt_title(disclaimer_id()),
+    nav_panel(title = fmt_title(welcome_id()), card(welcome_text())),
+    nav_panel(title = fmt_title(dataset_id()), card(
+      layout_sidebar(sidebar = side_bar(), card(DT::DTOutput(dataset_id()))))),
+    nav_panel(title = fmt_title(dictionary_id()), card(DT::DTOutput(dictionary_id()))),
     nav_spacer(),
-    nav_panel("Disclaimer", card(lorem::ipsum_words(150)))
+    nav_panel(title = fmt_title(disclaimer_id()), card(disclaimer_text())),
   )
 
   server <- function(input, output, session) {
