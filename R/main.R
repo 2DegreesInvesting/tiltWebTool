@@ -1,38 +1,22 @@
-dictionary <- utils::read.csv(dictionary_url("csv"), colClasses = "character")
-
 main <- function() {
-  ui <- fluidPage(
-    theme = theme_app(),
-    fluidRow(
-      tags$h1("Select inputs"),
-      column(4, selectChoices("indicator")),
-      column(4, selectChoices("level")),
-      column(4, selectChoices("weight", "(only at product level)")),
-    ),
-    fluidRow(
-      tags$h1("Filtered data"),
-      downloadButton("download", "Download .tsv"),
-      DT::DTOutput("dataset")
-    ),
-    fluidRow(
-      tags$h1("Data dictionary"),
-      DT::DTOutput("dictionary")
-    ),
-    fluidRow(
-      tags$sub(paste0("tiltWebTool-v", packageVersion("tiltWebTool")))
-    )
+  ui <- page_navbar(
+    title = "tilt",
+    nav_panel("Disclaimer", card(lorem::ipsum_words(150))),
+    nav_panel("Welcome", card(lorem::ipsum_words(80))),
+    nav_panel("Dataset", card(layout_sidebar(
+      sidebar = dataset_sidebar(),
+      card(DT::DTOutput("dataset"))
+    ))),
+    nav_spacer(),
+    nav_panel(title = "Dictionary", card(DT::DTOutput("dictionary")))
   )
 
   server <- function(input, output, session) {
-    bslib::bs_themer()
-
-    # TODO extract as function
     dataset <- reactive({
       req(input$indicator)
       req(input$level)
       req(input$weight)
 
-      # TODO Extract function
       tilt_profile <- get(input$indicator, "package:tiltWebTool")
       unnest_level <- get(paste0("unnest_", input$level))
 
@@ -52,7 +36,7 @@ main <- function() {
       }
     )
 
-    output$dictionary <- DT::renderDT(dictionary)
+    output$dictionary <- DT::renderDT(dictionary())
   }
 
   shinyApp(ui, server)

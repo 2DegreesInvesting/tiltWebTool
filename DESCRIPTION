@@ -15,6 +15,7 @@ Imports:
     bslib,
     dplyr,
     DT,
+    lorem,
     readr,
     shiny,
     tidyselect,

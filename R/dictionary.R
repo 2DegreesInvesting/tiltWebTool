@@ -1,3 +1,7 @@
+dictionary <- function() {
+  readr::read_csv(dictionary_url("csv"), col_types = "c")
+}
+
 dictionary_url <- function(type = c("web", "csv")) {
   type <- match.arg(type)
 

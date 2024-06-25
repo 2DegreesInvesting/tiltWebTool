@@ -3,6 +3,7 @@
 
 ## usethis namespace: start
 #' @import shiny
+#' @import bslib
 #' @importFrom dplyr .data
 #' @importFrom dplyr group_by
 #' @importFrom dplyr mutate
