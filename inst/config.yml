@@ -1,0 +1,32 @@
+default:
+
+  welcome:
+    header: "Welcome to *tilt*'s online portal"
+    body: >
+      *tilt* is a database designed to provide detailed insights into firms,
+      primarily focusing on small and medium enterprises (SMEs). It offers
+      extensive information on their climate profiles and transition risks
+      associated with evolving environmental standards. Recognising that the
+      creation of climate data involves a series of crucial decisions that
+      significantly influence outcomes, *tilt* aims to empower its users to
+      independently take these decisions. It allows them to thoughtfully consider
+      these decisions and customise methodological choices to best suit their
+      specific needs.
+
+  disclaimer:
+    header: "Disclaimer"
+    body: >
+      Information in this *tilt* databases serves for informational and research
+      purposes only. The information has been obtained from sources believed
+      to be reliable and have been calculated using research standards. However,
+      neither *tilt* nor Theia Finance labs does make any express or implied
+      warranty or representation concerning the completeness and correctness of
+      information provided. Therefore, both Theia Finance labs and *tilt* disclaim
+      any liability for any loss or damage resulting from use of information in
+      this database or reliance or decisions based upon the results or outcomes
+      of this database. Each user and/or third parties are advised that they are
+      responsible for reliance on the database, data information, findings and
+      opinions provided by *tilt* and Theia Finance Labs. Any reference to a
+      specific data source, data provider or service by trade name, trademark,
+      manufacturer, or otherwise, does not constitute or imply an endorsement,
+      recommendation or favouring by either *tilt* or Theia Finance Labs.

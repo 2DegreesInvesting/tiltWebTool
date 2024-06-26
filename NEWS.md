@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9026 (2024-06-26)
+
+* Add required text via inst/config.yml (#79).
+
 # tiltWebTool 0.0.0.9025 (2024-06-25)
 
 * Add bslib layout so we have space to add the required text (#75).
