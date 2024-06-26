@@ -1,6 +1,6 @@
 main <- function() {
   ui <- page_navbar(
-    title = title(),
+    title = tags$a(home_id(), href = "https://www.tiltsmes.org/"),
     theme = theme(),
     footer = footer(),
     selected = fmt_title(disclaimer_id()),
@@ -10,6 +10,7 @@ main <- function() {
     ))),
     nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id()))),
     nav_spacer(),
+    nav_panel(fmt_title(video_id()), video_card()),
     nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   )
 
