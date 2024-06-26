@@ -1,0 +1,18 @@
+# See https://rstudio.github.io/bslib/reference/bs_theme.html
+default:
+
+  bg: "#E2E5E9"
+  fg: "#000000"
+  primary: "#287155"
+  secondary: "#B3D15D"
+  success: "#B3D15D"
+  info: "#5170CF"
+  warning: "#F6CB4E"
+  danger: "#E3693B"
+
+  base_font: "Roboto"
+  base_font_fallback: "sans-serif"
+  code_font: "Source Code Pro"
+  code_font_fallback: "monospace"
+  heading_font: "Roboto Condensed"
+  heading_font_fallback: "sans-serifx"
