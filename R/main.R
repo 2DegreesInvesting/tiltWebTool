@@ -10,6 +10,7 @@ main <- function() {
     ))),
     nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id()))),
     nav_spacer(),
+    nav_panel(video_id(), video_card()),
     nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   )
 
