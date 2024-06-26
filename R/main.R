@@ -2,15 +2,15 @@ main <- function() {
   ui <- page_navbar(
     title = "tilt",
     theme = theme(),
+    footer = footer(),
     selected = fmt_title(disclaimer_id()),
-    nav_panel(fmt_title(welcome_id()), card(welcome_text())),
+    nav_panel(fmt_title(welcome_id()), text_card(welcome_id())),
     nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
-      sidebar = side_bar(),
-      card(DTOutput(dataset_id()))
+      sidebar = side_bar(), card(DTOutput(dataset_id()))
     ))),
     nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id()))),
     nav_spacer(),
-    nav_panel(fmt_title(disclaimer_id()), card(disclaimer_text())),
+    nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   )
 
   server <- function(input, output, session) {
