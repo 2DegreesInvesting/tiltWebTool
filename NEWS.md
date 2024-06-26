@@ -2,7 +2,7 @@
 
 # tiltWebTool 0.0.0.9029 (2024-06-26)
 
-* Same as previous version (#91).
+* Use tilt's colours and fonts (#91).
 
 # tiltWebTool 0.0.0.9028 (2024-06-26)
 
