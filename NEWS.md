@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9029 (2024-06-26)
+
+* Same as previous version (#91).
+
 # tiltWebTool 0.0.0.9028 (2024-06-26)
 
 * Embed a short video explaining what's tilt (#88).
