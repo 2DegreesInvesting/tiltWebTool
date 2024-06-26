@@ -1,6 +1,6 @@
 main <- function() {
   ui <- page_navbar(
-    title = "tilt",
+    title = title(),
     theme = theme(),
     footer = footer(),
     selected = fmt_title(disclaimer_id()),
