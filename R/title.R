@@ -1,3 +1,3 @@
 title <- function() {
-  tags$a(href = "https://www.tiltsmes.org/", markdown("*tilt*"))
+  tags$a(href = "https://www.tiltsmes.org/", tags$em("tilt"))
 }
