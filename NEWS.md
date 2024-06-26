@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9027 (2024-06-26)
+
+* The word 'tilt' now links to tilt's website (#87).
+
 # tiltWebTool 0.0.0.9026 (2024-06-26)
 
 * Add required text via inst/config.yml (#79).
