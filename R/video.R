@@ -1,7 +1,3 @@
-video_id <- function() {
-  "Video"
-}
-
 video_card <- function() {
   shiny::tags$iframe(
     width = "560",

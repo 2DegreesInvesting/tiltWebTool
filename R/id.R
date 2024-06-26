@@ -1,3 +1,7 @@
+home_id <- function() {
+  "tilt"
+}
+
 welcome_id <- function() {
   "welcome"
 }
@@ -12,4 +16,8 @@ dataset_id <- function() {
 
 dictionary_id <- function() {
   "dictionary"
+}
+
+video_id <- function() {
+  "video"
 }
