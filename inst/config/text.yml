@@ -14,8 +14,13 @@ default:
       specific needs.
 
   disclaimer:
-    header: "Disclaimer"
+    header: "License and disclaimer"
     body: >
+      The toy 'tilt' app © 2024 by Mauro Lepore, Kalash Singhal, Linda Delacombaz,
+      Tilman Trompke, Anne Schoenauer (the 'tilt' team of Theia Finance Labs)
+      is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives
+      4.0 International.  
+
       Information in this *tilt* databases serves for informational and research
       purposes only. The information has been obtained from sources believed
       to be reliable and have been calculated using research standards. However,
@@ -30,3 +35,4 @@ default:
       specific data source, data provider or service by trade name, trademark,
       manufacturer, or otherwise, does not constitute or imply an endorsement,
       recommendation or favouring by either *tilt* or Theia Finance Labs.
+
