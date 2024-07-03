@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9030 (2024-07-03)
+
+* The disclaimer page now also links to a CC- license (#97).
+
 # tiltWebTool 0.0.0.9029 (2024-06-26)
 
 * Use tilt's colors and fonts (#91).
