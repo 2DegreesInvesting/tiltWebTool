@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9033 (2024-07-04)
+
+* The download link is now shown only after registration and consent (#94).
+
 # tiltWebTool 0.0.0.9031 (2024-07-04)
 
 * Replace the download button with a link to the download page (#98).
