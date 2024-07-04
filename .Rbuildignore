@@ -11,3 +11,4 @@
 ^app\.R$
 ^data-raw$
 ^\.renvignore$
+^Dockerfile$
