@@ -21,3 +21,7 @@ dictionary_id <- function() {
 video_id <- function() {
   "video"
 }
+
+methodology_id <- function() {
+  "methodology"
+}
