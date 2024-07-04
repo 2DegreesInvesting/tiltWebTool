@@ -3,6 +3,6 @@ side_bar <- function() {
     selectChoices("indicator"),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
-    card(licensed_download())
+    download()
   )
 }
