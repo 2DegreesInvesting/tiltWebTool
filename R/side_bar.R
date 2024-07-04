@@ -3,6 +3,6 @@ side_bar <- function() {
     selectChoices("indicator"),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
-    downloadButton("download", "Download .tsv")
+    card(licensed_download())
   )
 }

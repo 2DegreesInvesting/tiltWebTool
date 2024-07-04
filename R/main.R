@@ -30,15 +30,6 @@ main <- function() {
 
     output$dataset <- DT::renderDT(dataset())
 
-    output$download <- downloadHandler(
-      filename = function() {
-        time_stamp(paste0(input$indicator, "_", input$level, ".tsv"))
-      },
-      content = function(file) {
-        readr::write_tsv(dataset(), file)
-      }
-    )
-
     output$dictionary <- DT::renderDT(dictionary())
   }
 
