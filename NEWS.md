@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9034 (2024-07-04)
+
+* The nav-bar now links to the 'tilt' methodology (#78).
+
 # tiltWebTool 0.0.0.9033 (2024-07-04)
 
 * The download link is now shown only after registration and consent (#94).
