@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9038 (2024-07-05)
+
+* Align menu to the right.
+
 # tiltWebTool 0.0.0.9037 (2024-07-05)
 
 * Enable deployment both in a Docker container and also on Google Cloud Run.
