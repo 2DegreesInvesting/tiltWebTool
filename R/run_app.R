@@ -1,6 +1,6 @@
 run_app <- function() {
   ui <- page_navbar(
-    title = tags$a(home_id(), href = "https://www.tiltsmes.org/"),
+    title = link("home"),
     theme = theme(),
     footer = footer(),
     selected = fmt_title(disclaimer_id()),

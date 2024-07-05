@@ -1,0 +1,9 @@
+default:
+
+  home:
+    text: "tilt"
+    link: "https://www.tiltsmes.org/"
+
+  download:
+    text: "Request data"
+    link: "https://forms.gle/R6JUK38eiZ1Yywyx6"
