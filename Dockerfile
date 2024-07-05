@@ -17,4 +17,4 @@ RUN R -e "install.packages('pak'); pak::pak()"
 EXPOSE 3838
 
 # Use pkgload to load your package and then run the main function to start the app
-CMD ["R", "-e", "pkgload::load_all('/usr/local/src/tiltWebTool'); main()"]
+CMD ["R", "-e", "source('/usr/local/src/tiltWebTool/app.R')"]
