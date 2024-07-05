@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+- Same as previous version.
+
+# tiltWebTool 0.0.0.9036 (2024-07-05)
+
+* No longer deploy toy shinyapps.io (#104).
+
 # tiltWebTool 0.0.0.9035 (2024-07-05)
 
 * Add Dockerfile.
