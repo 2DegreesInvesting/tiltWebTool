@@ -1,4 +1,4 @@
-main <- function() {
+run_app <- function() {
   ui <- page_navbar(
     title = tags$a(home_id(), href = "https://www.tiltsmes.org/"),
     theme = theme(),
