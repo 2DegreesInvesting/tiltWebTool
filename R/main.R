@@ -12,9 +12,9 @@ main <- function() {
     nav_spacer(),
     nav_menu(
       title = "More",
-        nav_panel(fmt_title(methodology_id()), text_card(methodology_id())),
-        nav_panel(fmt_title(video_id()), video_card()),
-        nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
+      nav_panel(fmt_title(methodology_id()), text_card(methodology_id())),
+      nav_panel(fmt_title(video_id()), video_card()),
+      nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
     )
   )
 
