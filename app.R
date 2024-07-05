@@ -1,2 +1,2 @@
 pkgload::load_all(".")
-main()
+shiny::runApp(main(), port = 8080L, host = "0.0.0.0")
