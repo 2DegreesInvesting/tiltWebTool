@@ -1,6 +1,8 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-- Same as previous version.
+# tiltWebTool 0.0.0.9037 (2024-07-05)
+
+* Enable deployment both in a Docker container and also on Google Cloud Run.
 
 # tiltWebTool 0.0.0.9036 (2024-07-05)
 
