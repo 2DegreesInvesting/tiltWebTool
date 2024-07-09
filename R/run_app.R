@@ -1,6 +1,7 @@
 run_app <- function() {
   ui <- page_navbar(
-    title = link("home"),
+    window_title = "tilt",
+    title = logo(),
     theme = theme(),
     footer = footer(),
     selected = fmt_title(disclaimer_id()),

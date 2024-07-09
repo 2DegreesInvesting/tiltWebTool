@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9040 (2024-07-09)
+
+* In the navigation bar replace 'tilt' with its logo (#122).
+
 # tiltWebTool 0.0.0.9039 (2024-07-09)
 
 * Link license from 'Request data' (#114).
