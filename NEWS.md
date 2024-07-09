@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9041 (2024-07-09)
+
+* Use logo with transparent background (#124).
+
 # tiltWebTool 0.0.0.9040 (2024-07-09)
 
 * In the navigation bar replace 'tilt' with its logo (#122).
