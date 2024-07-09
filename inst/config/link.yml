@@ -2,7 +2,7 @@ default:
 
   home:
     # FIXME: Replace with a logo with transparent background
-    logo: "https://github.com/2DegreesInvesting/tiltWebTool/assets/5856545/0f719816-a68b-4adb-b1de-f74e812e1537"
+    logo: "https://github.com/2DegreesInvesting/tiltWebTool/blob/124_logo/inst/logo/logo.png?raw=true"
     link: "https://www.tiltsmes.org/"
 
   download:
