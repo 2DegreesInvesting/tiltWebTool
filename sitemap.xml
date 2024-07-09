@@ -1,30 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/404.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/reference/datasets.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/reference/reexports.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltWebTool/reference/tiltWebTool-package.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/404.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/LICENSE.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/authors.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/news/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/reference/datasets.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/reference/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/reference/reexports.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltWebTool/reference/tiltWebTool-package.html</loc></url>
 </urlset>
+
