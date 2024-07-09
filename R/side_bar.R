@@ -3,6 +3,10 @@ side_bar <- function() {
     selectChoices("indicator"),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
-    link("download")
+    request_data()
   )
+}
+
+request_data <- function() {
+  tags$p(link("download"), " under ", link("license"))
 }

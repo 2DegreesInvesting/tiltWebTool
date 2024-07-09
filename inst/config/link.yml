@@ -7,3 +7,7 @@ default:
   download:
     text: "Request data"
     link: "https://docs.google.com/forms/d/e/1FAIpQLScWRHg5tKRKMi8TBR5YuahIhj2Lmn2i9V_wzBcdU_wJxO5RdQ/viewform"
+
+  license:
+    text: "CC BY-NC-ND 4.0"
+    link: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
