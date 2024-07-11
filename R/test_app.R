@@ -7,9 +7,8 @@ test_app <- function() {
   )
   server <- function(input, output, session) {
     output$table <- renderTable({
-      head(company_data, input$.n)
+      utils::head(company_data, input$.n)
     })
-
   }
 
   shinyApp(ui, server)
