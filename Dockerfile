@@ -1,9 +1,12 @@
 FROM rocker/r-ver:latest
 
-COPY . /srv/shiny-server/app
+COPY . /app
 
-WORKDIR /srv/shiny-server/app
+WORKDIR /app
 
 RUN Rscript -e "install.packages('pak'); pak::pak()"
+
+# Google Cloud Run likes this port
+EXPOSE 8080
 
 ENTRYPOINT ["Rscript","app.R"]
