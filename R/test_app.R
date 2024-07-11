@@ -1,5 +1,5 @@
 test_app <- function() {
-  company_data <- duckdbfs::open_dataset("/pushymatador/fake/company")
+  company_data <- arrow::open_dataset("/pushymatador/fake/company")
 
   ui <- fluidPage(
     numericInput(".n", "Rows to show", min = 1, max = 10, value = 5),
