@@ -1,8 +1,7 @@
 default:
 
   home:
-    # FIXME: Replace with a logo with transparent background
-    logo: "https://github.com/2DegreesInvesting/tiltWebTool/blob/124_logo/inst/logo/logo.png?raw=true"
+    logo: "https://github.com/2DegreesInvesting/tiltWebTool/raw/main/inst/logo/logo.png"
     link: "https://www.tiltsmes.org/"
 
   download:
