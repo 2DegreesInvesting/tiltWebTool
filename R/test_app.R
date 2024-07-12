@@ -1,5 +1,10 @@
 test_app <- function() {
-  company_data <- arrow::open_dataset("/pushymatador/fake/company")
+  from <- function(parent) {
+    sprintf("read_parquet('%s/**/*.parquet', hive_partitioning = true)", parent)
+  }
+  parent <- "/pushymatador/fake/company"
+  con <- DBI::dbConnect(duckdb::duckdb(), dbdir = ":memory:")
+  company_data <- dplyr::tbl(con, from = from(parent))
 
   ui <- fluidPage(
     numericInput(".n", "Rows to show", min = 1, max = 10, value = 5),
