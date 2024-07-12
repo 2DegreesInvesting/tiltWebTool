@@ -1,5 +1,7 @@
 FROM rocker/r-ver:latest
 
+COPY /pushymatador /tiltWebtoolData
+
 COPY . /app
 
 WORKDIR /app
