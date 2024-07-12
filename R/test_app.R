@@ -1,4 +1,14 @@
-test_app <- function() {
+#' Test the app passing data as an argument
+#'
+#' @param company A path to the company data.
+#'
+#' @return Called for its side effect.
+#' @export
+#'
+#' @examples if (interactive()) {
+#' # test_app()
+#' }
+test_app <- function(company = "/pushymatador/fake/company") {
   from <- function(parent) {
     sprintf("read_parquet('%s/**/*.parquet', hive_partitioning = true)", parent)
   }
@@ -7,7 +17,7 @@ test_app <- function() {
     dplyr::tbl(con, from = from(parent))
   }
 
-  company_data <- connect_tbl("/pushymatador/fake/company")
+  company_data <- connect_tbl(company)
 
   ui <- fluidPage(
     numericInput(".n", "Rows to show", min = 1, max = 10, value = 5),
