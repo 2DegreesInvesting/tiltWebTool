@@ -14,6 +14,7 @@
 #' @importFrom dplyr ungroup
 #' @importFrom DT DTOutput
 #' @importFrom tidyselect all_of
+#' @importFrom tidyselect everything
 #' @importFrom tidyselect matches
 #' @importFrom utils packageVersion
 #' @importFrom utils read.table
