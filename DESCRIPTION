@@ -19,6 +19,7 @@ Imports:
     fs,
     readr,
     shiny,
+    sodium,
     tidyselect,
     tiltIndicator (>= 0.0.0.9224)
 Suggests: 
@@ -32,4 +33,4 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

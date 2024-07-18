@@ -25,13 +25,16 @@ run_app <- function() {
       req(input$indicator)
       req(input$level)
       req(input$weight)
+      isolate(input$password)
 
       tilt_profile <- get(input$indicator, "package:tiltWebTool")
       unnest_level <- get(paste0("unnest_", input$level))
 
       out <- tilt_profile |>
         unnest_level() |>
-        select(-matches(unselected_choices(input$weight)))
+        select(-matches(unselected_choices(input$weight))) |>
+        select(-all_of(col_exclude(input$password))) |>
+        unique()
     })
 
     output$dataset <- DT::renderDT(dataset())
