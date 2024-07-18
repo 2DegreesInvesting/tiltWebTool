@@ -1,20 +1,4 @@
 run_app <- function() {
-  # # ?passwordInput
-  # test_app <- function() {
-  #   ui <- fluidPage(
-  #     passwordInput("password", "Password:"),
-  #     actionButton("go", "Go"),
-  #     verbatimTextOutput("value")
-  #   )
-  #   server <- function(input, output) {
-  #     output$value <- renderText({
-  #       req(input$go)
-  #       isolate(input$password)
-  #     })
-  #   }
-  #   shinyApp(ui, server)
-  # }
-  #
   ui <- page_navbar(
     window_title = "tilt",
     title = logo(),
@@ -41,6 +25,11 @@ run_app <- function() {
       req(input$indicator)
       req(input$level)
       req(input$weight)
+      isolate(input$password)
+
+      if (input$password != ok()) {
+        stop("Incorrect password")
+      }
 
       tilt_profile <- get(input$indicator, "package:tiltWebTool")
       unnest_level <- get(paste0("unnest_", input$level))
