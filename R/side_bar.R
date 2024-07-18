@@ -3,6 +3,8 @@ side_bar <- function() {
     selectChoices("indicator"),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
+    passwordInput("password", "Password:"),
+    actionButton("go", "Show data"),
     request_data()
   )
 }
