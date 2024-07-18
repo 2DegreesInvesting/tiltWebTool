@@ -19,6 +19,7 @@ Imports:
     fs,
     readr,
     shiny,
+    sodium,
     tidyselect,
     tiltIndicator (>= 0.0.0.9224)
 Suggests: 

@@ -25,6 +25,12 @@ run_app <- function() {
       req(input$indicator)
       req(input$level)
       req(input$weight)
+      isolate(input$password)
+
+      authorized <- sodium::password_verify(hash(), input$password)
+      if (!authorized) {
+        stop("Incorrect password.")
+      }
 
       tilt_profile <- get(input$indicator, "package:tiltWebTool")
       unnest_level <- get(paste0("unnest_", input$level))
