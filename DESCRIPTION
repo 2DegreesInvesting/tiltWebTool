@@ -19,14 +19,14 @@ Imports:
     fs,
     readr,
     shiny,
-    sodium,
+    shinyauthr,
     tidyselect,
     tiltIndicator (>= 0.0.0.9224)
 Suggests: 
     pkgload,
+    sodium,
     spelling,
-    testthat (>= 3.0.0),
-    tibble
+    testthat (>= 3.0.0)
 Remotes: 
     2DegreesInvesting/tiltIndicator
 Config/testthat/edition: 3
