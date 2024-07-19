@@ -1,6 +1,5 @@
 side_bar <- function() {
   sidebar(
-    passwordInput("password", "Show private data", placeholder = "Your password"),
     selectChoices("indicator"),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
