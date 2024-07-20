@@ -24,15 +24,9 @@ The goal of tiltWebTool is to help you use tilt software from the web browser.
 
 ### Datasets
 
-```{r}
-library(tibble)
-
-devtools::load_all()
-packageVersion("tiltWebTool")
-
-emissions
-
-sector
+```r
+pkgload::load_all()
+run_app()
 ```
 
 ### Dictionary

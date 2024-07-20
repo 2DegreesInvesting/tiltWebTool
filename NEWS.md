@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9044 (2024-07-19)
+
+* Password-protection is now for the entire app (#136).
+
 # tiltWebTool 0.0.0.9043 (2024-07-18)
 
 * Private data is now password-protected (#136).
