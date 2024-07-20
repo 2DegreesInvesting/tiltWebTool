@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">tiltWebTool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9043</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9044</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,47 +56,8 @@
 <h3 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a>
 </h3>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">load_all</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ℹ Loading tiltWebTool</span></span></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/packageDescription.html" class="external-link">packageVersion</a></span><span class="op">(</span><span class="st">"tiltWebTool"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] '0.0.0.9019'</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span></span>
-<span><span class="va">emissions</span></span>
-<span><span class="co">#&gt; # A tibble: 72 × 3</span></span>
-<span><span class="co">#&gt;    companies_id                              product           company </span></span>
-<span><span class="co">#&gt;  * &lt;chr&gt;                                     &lt;list&gt;            &lt;list&gt;  </span></span>
-<span><span class="co">#&gt;  1 asteria_megalotomusquinquespinosus        &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  2 skarn_gallinule                           &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  3 relegable_southernhairnosedwombat         &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  4 psychodelic_airedale                      &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  5 ergophilic_fieldspaniel                   &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  6 preexistent_africanmolesnake              &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  7 wealthy_ocelot                            &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  8 fulltime_mollusk                          &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt;  9 gentlemanlike_asiaticlesserfreshwaterclam &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt; 10 frowsy_metalmarkbutterfly                 &lt;tibble [6 × 28]&gt; &lt;tibble&gt;</span></span>
-<span><span class="co">#&gt; # ℹ 62 more rows</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span></span>
-<span><span class="va">sector</span></span>
-<span><span class="co">#&gt; # A tibble: 72 × 3</span></span>
-<span><span class="co">#&gt;    companies_id                       product           company           </span></span>
-<span><span class="co">#&gt;  * &lt;chr&gt;                              &lt;list&gt;            &lt;list&gt;            </span></span>
-<span><span class="co">#&gt;  1 antimonarchy_canine                &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  2 celestial_lovebird                 &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  3 nonphilosophical_llama             &lt;tibble [8 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  4 asteria_megalotomusquinquespinosus &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  5 quasifaithful_amphiuma             &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  6 spectacular_americanriverotter     &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  7 contrite_silkworm                  &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  8 harmless_owlbutterfly              &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt;  9 fascist_maiasaura                  &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt; 10 charismatic_islandwhistler         &lt;tibble [4 × 25]&gt; &lt;tibble [16 × 12]&gt;</span></span>
-<span><span class="co">#&gt; # ℹ 62 more rows</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pkgload</span><span class="fu">::</span><span class="fu"><a href="https://pkgload.r-lib.org/reference/load_all.html" class="external-link">load_all</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">run_app</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="dictionary">Dictionary<a class="anchor" aria-label="anchor" href="#dictionary"></a>
