@@ -10,8 +10,8 @@ run_app <- function() {
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(DTOutput(dataset_id()))
   )))
-  dictionary_tav <- nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id())))
-  spacer_tav <- nav_spacer()
+  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id())))
+  spacer_tab <- nav_spacer()
   menu_tab <- nav_menu(
     title = "More",
     align = "right",
@@ -64,8 +64,8 @@ run_app <- function() {
         nav_insert("tabs", disclaimer_tab, select = TRUE)
         nav_insert("tabs", welcome_tab)
         nav_insert("tabs", dataset_tab)
-        nav_insert("tabs", dictionary_tav)
-        nav_insert("tabs", spacer_tav)
+        nav_insert("tabs", dictionary_tab)
+        nav_insert("tabs", spacer_tab)
         nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
