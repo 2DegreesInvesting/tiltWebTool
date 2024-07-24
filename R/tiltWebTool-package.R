@@ -5,6 +5,7 @@
 #' @import bslib
 #' @import shiny
 #' @importFrom dplyr .data
+#' @importFrom dplyr filter
 #' @importFrom dplyr group_by
 #' @importFrom dplyr mutate
 #' @importFrom dplyr n
@@ -12,7 +13,6 @@
 #' @importFrom dplyr summarise
 #' @importFrom dplyr summarize
 #' @importFrom dplyr ungroup
-#' @importFrom DT DTOutput
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect everything
 #' @importFrom tidyselect matches

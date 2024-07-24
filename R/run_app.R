@@ -8,9 +8,9 @@ run_app <- function() {
   disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   welcome_tab <- nav_panel(fmt_title(welcome_id()), text_card(welcome_id()))
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
-    sidebar = side_bar(), card(DTOutput(dataset_id()))
+    sidebar = side_bar(), card(tableOutput(dataset_id()))
   )))
-  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id())))
+  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(tableOutput(dictionary_id())))
   spacer_tab <- nav_spacer()
   menu_tab <- nav_menu(
     title = "More",
@@ -71,18 +71,24 @@ run_app <- function() {
         dataset <- reactive({
           req(input$level)
           req(input$weight)
+          req(input$name)
+          req(input$n)
 
           tilt_profile <- get("emissions", "package:tiltWebTool")
           unnest_level <- get(paste0("unnest_", input$level))
 
           out <- tilt_profile |>
             unnest_level() |>
-            select(-matches(unselected_choices(input$weight)))
+            select(-matches(unselected_choices(input$weight))) |>
+            filter(grepl(input$name, company_name)) |>
+            head(input$n)
+
+          out
         })
 
-        output$dataset <- DT::renderDT(dataset())
+        output$dataset <- renderTable(dataset())
 
-        output$dictionary <- DT::renderDT(dictionary())
+        output$dictionary <- renderTable(dictionary())
       }
     })
   }

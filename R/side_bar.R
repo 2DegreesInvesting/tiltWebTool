@@ -1,7 +1,14 @@
 side_bar <- function() {
   sidebar(
+    textInput(
+      "name",
+      "Match `company_name`",
+      value = ".",
+      placeholder = "To match all use dot ."
+    ),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
+    numericInput("n", "Number of rows", value = 10, min = 1, max = 50, step = 1),
     request_data()
   )
 }

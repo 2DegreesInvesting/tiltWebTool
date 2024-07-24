@@ -15,7 +15,6 @@ Imports:
     bslib,
     config,
     dplyr,
-    DT,
     fs,
     readr,
     shiny,
