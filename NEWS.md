@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9045 (2024-07-24)
+
+* Remove 'Indicator' selector (#141)
+
 # tiltWebTool 0.0.0.9044 (2024-07-19)
 
 * Password-protection is now for the entire app (#136).
