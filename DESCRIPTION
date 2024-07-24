@@ -20,8 +20,7 @@ Imports:
     here,
     pkgload,
     shiny,
-    shinyauthr,
-    tidyselect
+    shinyauthr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
