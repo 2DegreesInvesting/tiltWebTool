@@ -14,7 +14,3 @@ indicator_choices <- function() {
 level_choices <- function() {
   indicator_levels()
 }
-
-weight_choices <- function() {
-  weight_modes()
-}

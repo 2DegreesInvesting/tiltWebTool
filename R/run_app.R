@@ -85,7 +85,6 @@ run_app <- function(db = here::here("db")) {
 
         dataset <- reactive({
           req(input$level)
-          req(input$weight)
           req(input$name)
           req(input$n)
           req(input$db)
@@ -93,7 +92,6 @@ run_app <- function(db = here::here("db")) {
 
           path <- fs::path(db, input$level)
           out <- arrow::open_dataset(path) |>
-            select(-matches(unselected_choices(input$weight))) |>
             filter(grepl(input$name, .data$company_name)) |>
             head(input$n)
 

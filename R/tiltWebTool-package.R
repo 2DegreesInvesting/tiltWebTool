@@ -8,7 +8,6 @@
 #' @importFrom dplyr filter
 #' @importFrom dplyr select
 #' @importFrom pkgload load_all
-#' @importFrom tidyselect matches
 #' @importFrom utils head
 #' @importFrom utils packageVersion
 ## usethis namespace: end

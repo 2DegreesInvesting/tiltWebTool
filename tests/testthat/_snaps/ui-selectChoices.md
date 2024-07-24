@@ -28,10 +28,3 @@
     Output
       [1] "product" "company"
 
----
-
-    Code
-      weight_choices()
-    Output
-      [1] "equal_weight" "worst_case"   "best_case"   
-
