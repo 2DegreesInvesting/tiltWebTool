@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9049 (2024-07-24)
+
+* Remove the weight selector (#146).
+
 # tiltWebTool 0.0.0.9048 (2024-07-24)
 
 * `run_app()` is now exported.
