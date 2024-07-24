@@ -1,4 +1,4 @@
-run_app <- function() {
+run_app <- function(db = here::here("db")) {
   login_tab <- nav_panel(
     title = icon("lock"),
     value = "login",
@@ -16,7 +16,11 @@ run_app <- function() {
     title = "More",
     align = "right",
     nav_panel(fmt_title(methodology_id()), text_card(methodology_id())),
-    nav_panel(fmt_title(video_id()), video_card())
+    nav_panel(fmt_title(video_id()), video_card()),
+    nav_panel("db", card(layout_sidebar(
+      sidebar = textInput("db", "Database path", "db"),
+      card(verbatimTextOutput("db"))
+    )))
   )
 
   ui <- page_navbar(
@@ -73,12 +77,11 @@ run_app <- function() {
           req(input$weight)
           req(input$name)
           req(input$n)
+          req(input$db)
 
-          tilt_profile <- get("emissions", "package:tiltWebTool")
-          unnest_level <- get(paste0("unnest_", input$level))
 
-          out <- tilt_profile |>
-            unnest_level() |>
+          path <- fs::path(db, input$level)
+          out <- arrow::open_dataset(path) |>
             select(-matches(unselected_choices(input$weight))) |>
             filter(grepl(input$name, company_name)) |>
             head(input$n)
@@ -89,6 +92,8 @@ run_app <- function() {
         output$dataset <- renderTable(dataset())
 
         output$dictionary <- renderTable(dictionary())
+
+        output$db <- shiny::renderPrint(fs::dir_tree(input$db))
       }
     })
   }
