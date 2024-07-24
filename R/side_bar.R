@@ -4,7 +4,7 @@ side_bar <- function() {
       "name",
       "Match `company_name`",
       value = ".",
-      placeholder = "'.' matches all"
+      placeholder = "To match all use dot ."
     ),
     selectChoices("level"),
     selectChoices("weight", "(product level)"),
