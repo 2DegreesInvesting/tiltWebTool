@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9047 (2024-07-24)
+
+* The data is now stored as a parquet dataset (#145).
+
 # tiltWebTool 0.0.0.9046 (2024-07-24)
 
 User-facing:
