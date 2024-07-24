@@ -18,17 +18,12 @@ Imports:
     dplyr,
     fs,
     here,
+    pkgload,
     shiny,
     shinyauthr,
-    tidyselect,
-    tiltIndicator (>= 0.0.0.9224)
+    tidyselect
 Suggests: 
-    pkgload,
-    sodium,
-    spelling,
     testthat (>= 3.0.0)
-Remotes: 
-    2DegreesInvesting/tiltIndicator
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true

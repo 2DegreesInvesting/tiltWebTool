@@ -13,6 +13,7 @@
 #' @importFrom dplyr summarise
 #' @importFrom dplyr summarize
 #' @importFrom dplyr ungroup
+#' @importFrom pkgload load_all
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect everything
 #' @importFrom tidyselect matches
