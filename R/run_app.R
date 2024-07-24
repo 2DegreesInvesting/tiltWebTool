@@ -71,13 +71,15 @@ run_app <- function() {
         dataset <- reactive({
           req(input$level)
           req(input$weight)
+          req(input$n)
 
           tilt_profile <- get("emissions", "package:tiltWebTool")
           unnest_level <- get(paste0("unnest_", input$level))
 
           out <- tilt_profile |>
             unnest_level() |>
-            select(-matches(unselected_choices(input$weight)))
+            select(-matches(unselected_choices(input$weight))) |>
+            head(input$n)
         })
 
         output$dataset <- DT::renderDT(dataset())
