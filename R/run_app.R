@@ -1,3 +1,14 @@
+#' Run the app
+#'
+#' @param db Path to a parquet dataset. To understand the default, consider this:
+#' * Called from /public/, `here::here("db")` yields /public/db/.
+#' * Called from /private/, `here::here("db")` yields /private/db/.
+#'
+#' @return Called for its side effect.
+#' @export
+#'
+#' @examplesIf interactive()
+#' run_app()
 run_app <- function(db = here::here("db")) {
   login_tab <- nav_panel(
     title = icon("lock"),
