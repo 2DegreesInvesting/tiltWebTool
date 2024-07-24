@@ -12,7 +12,6 @@
 #' @importFrom dplyr summarise
 #' @importFrom dplyr summarize
 #' @importFrom dplyr ungroup
-#' @importFrom DT DTOutput
 #' @importFrom tidyselect all_of
 #' @importFrom tidyselect everything
 #' @importFrom tidyselect matches

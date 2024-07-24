@@ -8,9 +8,9 @@ run_app <- function() {
   disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   welcome_tab <- nav_panel(fmt_title(welcome_id()), text_card(welcome_id()))
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
-    sidebar = side_bar(), card(DTOutput(dataset_id()))
+    sidebar = side_bar(), card(tableOutput(dataset_id()))
   )))
-  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(DTOutput(dictionary_id())))
+  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(tableOutput(dictionary_id())))
   spacer_tab <- nav_spacer()
   menu_tab <- nav_menu(
     title = "More",
@@ -82,9 +82,9 @@ run_app <- function() {
             head(input$n)
         })
 
-        output$dataset <- DT::renderDT(dataset())
+        output$dataset <- renderTable(dataset())
 
-        output$dictionary <- DT::renderDT(dictionary())
+        output$dictionary <- renderTable(dictionary())
       }
     })
   }
