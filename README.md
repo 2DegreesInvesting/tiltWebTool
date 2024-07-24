@@ -13,14 +13,16 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 The goal of tiltWebTool is to help you use tilt software from the web
 browser.
 
-### Datasets
+## Installation
+
+``` r
+# install.packages("pak")
+pak::pak("2DegreesInvesting/tiltWebTool")
+```
+
+## Example
 
 ``` r
 pkgload::load_all()
 run_app()
 ```
-
-### Dictionary
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpeL37_DinYYKaQNKWdjL0oKU_VrEKMDBN1dBfBpO6AgSyHLTt8WiiXFojcbPclsPTE0VliDWvRKxh/pubhtml?widget=true&amp;headers=false" width="600" height="500">
-</iframe>
