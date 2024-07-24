@@ -18,6 +18,6 @@
 #' @importFrom tidyselect everything
 #' @importFrom tidyselect matches
 #' @importFrom utils packageVersion
-#' @importFrom utils read.table
+#' @importFrom utils head
 ## usethis namespace: end
 NULL
