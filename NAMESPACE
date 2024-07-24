@@ -2,6 +2,7 @@
 
 import(bslib)
 import(shiny)
+importFrom(dplyr,.data)
 importFrom(dplyr,filter)
 importFrom(dplyr,select)
 importFrom(pkgload,load_all)
