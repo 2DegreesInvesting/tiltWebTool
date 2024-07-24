@@ -1,8 +1,20 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9046 (2024-07-24)
+
+User-facing:
+
+* Update selectors (#142):
+  * New selector for 'Number of rows'.
+  * New selector to match specific companies by name.
+
+Internal:
+
+* Remove dependency on the package DT.
+
 # tiltWebTool 0.0.0.9045 (2024-07-24)
 
-* Remove 'Indicator' selector (#141)
+* Remove 'Indicator' selector (#141).
 
 # tiltWebTool 0.0.0.9044 (2024-07-19)
 
