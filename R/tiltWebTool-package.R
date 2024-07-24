@@ -5,6 +5,7 @@
 #' @import bslib
 #' @import shiny
 #' @importFrom dplyr .data
+#' @importFrom dplyr filter
 #' @importFrom dplyr group_by
 #' @importFrom dplyr mutate
 #' @importFrom dplyr n

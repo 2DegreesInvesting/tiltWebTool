@@ -71,6 +71,7 @@ run_app <- function() {
         dataset <- reactive({
           req(input$level)
           req(input$weight)
+          req(input$id)
           req(input$n)
 
           tilt_profile <- get("emissions", "package:tiltWebTool")
@@ -79,7 +80,10 @@ run_app <- function() {
           out <- tilt_profile |>
             unnest_level() |>
             select(-matches(unselected_choices(input$weight))) |>
+            filter(grepl(input$id, companies_id)) |>
             head(input$n)
+
+          out
         })
 
         output$dataset <- renderTable(dataset())
