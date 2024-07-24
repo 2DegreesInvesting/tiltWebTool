@@ -1,5 +1,5 @@
 dictionary <- function() {
-  readr::read_csv(dictionary_url("csv"), col_types = "c")
+  arrow::read_csv_arrow(dictionary_url("csv"))
 }
 
 dictionary_url <- function(type = c("web", "csv")) {

@@ -18,7 +18,6 @@ Imports:
     dplyr,
     fs,
     here,
-    readr,
     shiny,
     shinyauthr,
     tidyselect,
