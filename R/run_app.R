@@ -69,11 +69,10 @@ run_app <- function() {
         nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
-          req(input$indicator)
           req(input$level)
           req(input$weight)
 
-          tilt_profile <- get(input$indicator, "package:tiltWebTool")
+          tilt_profile <- get("emissions", "package:tiltWebTool")
           unnest_level <- get(paste0("unnest_", input$level))
 
           out <- tilt_profile |>
