@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9050 (2024-07-26)
+
+* Improve performance and expectations: Cache requests and notify the user to hold
+on (#147).
+
 # tiltWebTool 0.0.0.9049 (2024-07-24)
 
 * Remove the weight selector (#146).
