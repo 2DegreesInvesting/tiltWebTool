@@ -84,11 +84,16 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
-          req(input$level)
-          req(input$name)
-          req(input$n)
+          req(input$level, input$name, input$n)
           req(input$db)
 
+          id <- showNotification(
+            "Big data, hold on ...",
+            duration = NULL,
+            closeButton = FALSE,
+            type = "message"
+          )
+          on.exit(removeNotification(id), add = TRUE)
 
           path <- fs::path(db, input$level)
           out <- arrow::open_dataset(path) |>
@@ -96,7 +101,9 @@ run_app <- function(db = here::here("db")) {
             head(input$n)
 
           out
-        })
+        }) |>
+          bindCache(input$level, input$name, input$n) |>
+          bindEvent(input$go)
 
         output$dataset <- renderTable(dataset())
 

@@ -8,6 +8,7 @@ side_bar <- function() {
     ),
     selectChoices("level"),
     numericInput("n", "Number of rows", value = 10, min = 1, max = 50, step = 1),
+    actionButton("go", "Go!"),
     request_data()
   )
 }
