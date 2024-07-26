@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9051 (2024-07-26)
+
+* Remove the "db" explorer. This was a temporary developer-oriented feature to
+"see" the app's file system.
+
 # tiltWebTool 0.0.0.9050 (2024-07-26)
 
 * Improve performance and expectations: Cache requests and notify the user to hold
