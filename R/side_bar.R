@@ -7,7 +7,7 @@ side_bar <- function() {
       placeholder = "To match all use dot ."
     ),
     selectChoices("level"),
-    numericInput("n", "Number of rows", value = 10, min = 1, max = 50, step = 1),
+    sliderInput("n", "Number of rows", value = 10, min = 10, max = 100, step = 10),
     actionButton("go", "Go!"),
     request_data()
   )
