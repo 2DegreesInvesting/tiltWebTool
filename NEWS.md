@@ -2,6 +2,11 @@
 
 # tiltWebTool 0.0.0.9051 (2024-07-26)
 
+* The possible number of rows are now clearly defined by the range of the input
+slider (#153).
+
+# tiltWebTool 0.0.0.9051 (2024-07-26)
+
 * Remove the "db" explorer. This was a temporary developer-oriented feature to
 "see" the app's file system.
 
