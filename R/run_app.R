@@ -27,11 +27,7 @@ run_app <- function(db = here::here("db")) {
     title = "More",
     align = "right",
     nav_panel(fmt_title(methodology_id()), text_card(methodology_id())),
-    nav_panel(fmt_title(video_id()), video_card()),
-    nav_panel("db", card(layout_sidebar(
-      sidebar = textInput("db", "Database path", "db"),
-      card(verbatimTextOutput("db"))
-    )))
+    nav_panel(fmt_title(video_id()), video_card())
   )
 
   ui <- page_navbar(
@@ -85,7 +81,6 @@ run_app <- function(db = here::here("db")) {
 
         dataset <- reactive({
           req(input$level, input$name, input$n)
-          req(input$db)
 
           id <- showNotification(
             "Big data, hold on ...",
@@ -108,8 +103,6 @@ run_app <- function(db = here::here("db")) {
         output$dataset <- renderTable(dataset())
 
         output$dictionary <- renderTable(dictionary())
-
-        output$db <- shiny::renderPrint(fs::dir_tree(input$db))
       }
     })
   }
