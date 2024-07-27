@@ -93,7 +93,9 @@ run_app <- function(db = here::here("db")) {
           path <- fs::path(db, input$level)
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
-            head(input$n)
+            head(input$n) |>
+            dplyr::collect() |>
+            tibble::rowid_to_column(".")
 
           out
         }) |>
