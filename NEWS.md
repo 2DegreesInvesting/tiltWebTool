@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9053 (2024-07-27)
+
+* Show row number. This helps the users know if they are seeing all the data that
+matches their selection criteria (#154).
+
 # tiltWebTool 0.0.0.9051 (2024-07-26)
 
 * The possible number of rows are now clearly defined by the range of the input
