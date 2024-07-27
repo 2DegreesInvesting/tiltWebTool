@@ -93,14 +93,16 @@ run_app <- function(db = here::here("db")) {
           path <- fs::path(db, input$level)
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
-            head(input$n)
+            head(input$n) |>
+            dplyr::collect() |>
+            dplyr::as_tibble()
 
           out
         }) |>
           bindCache(input$level, input$name, input$n) |>
           bindEvent(input$go)
 
-        output$dataset <- renderTable(dataset())
+        output$dataset <- renderTable(wide_table(dataset()))
 
         output$dictionary <- renderTable(dictionary())
       }
