@@ -13,7 +13,8 @@ run_app <- function(db = here::here("db")) {
   login_tab <- nav_panel(
     title = icon("lock"),
     value = "login",
-    shinyauthr::loginUI("login")
+    card(shinyauthr::loginUI("login")),
+    card(app_version())
   )
 
   disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
@@ -35,7 +36,6 @@ run_app <- function(db = here::here("db")) {
     window_title = "tilt",
     title = logo(),
     theme = theme(),
-    footer = footer(),
     collapsible = TRUE,
     login_tab
   )
