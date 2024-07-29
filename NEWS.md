@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9055 (2024-07-29)
+
+* Make version a bit smaller.
+
 # tiltWebTool 0.0.0.9054 (2024-07-29)
 
 * Move app's version to the login page (#143).
