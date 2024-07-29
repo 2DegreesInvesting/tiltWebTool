@@ -14,7 +14,7 @@ run_app <- function(db = here::here("db")) {
     title = icon("lock"),
     value = "login",
     card(shinyauthr::loginUI("login")),
-    card(app_version())
+    card(tags$sub(app_version()))
   )
 
   disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
