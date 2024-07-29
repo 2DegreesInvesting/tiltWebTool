@@ -17,10 +17,7 @@ run_app <- function(db = here::here("db")) {
     card(app_version())
   )
 
-  disclaimer_tab <- nav_panel(
-    fmt_title(disclaimer_id()),
-    text_card(disclaimer_id())
-  )
+  disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   welcome_tab <- nav_panel(fmt_title(welcome_id()), text_card(welcome_id()))
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(tableOutput(dataset_id()))
