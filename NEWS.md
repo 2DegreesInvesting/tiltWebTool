@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9058 (2024-08-06)
+
+* Prune data/ (#162).
+
 # tiltWebTool 0.0.0.9057 (2024-08-06)
 
 * New credentials to access toy data (User Name: toy, Password: toy) (#161).
