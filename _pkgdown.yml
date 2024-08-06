@@ -9,6 +9,3 @@ reference:
 - title: Columns
   contents:
   - starts_with("cols_")
-- title: Deprecated
-  contents:
-  - has_concept("deprecated")
