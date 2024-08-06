@@ -20,5 +20,17 @@ Useful links:
 \author{
 \strong{Maintainer}: Mauro Lepore \email{maurolepore@gmail.com} (\href{https://orcid.org/0000-0002-1986-7988}{ORCID})
 
+Authors:
+\itemize{
+  \item Anne Schoenauer \email{anne.schoenauer@2degrees-investing.org}
+  \item Tilman Trompke \email{tilman@2degrees-investing.org}
+  \item Kalash Singhal \email{kalash@2degrees-investing.org}
+}
+
+Other contributors:
+\itemize{
+  \item 2 Degrees Investing Initiative \email{contact@2degrees-investing.org} [copyright holder, funder]
+}
+
 }
 \keyword{internal}
