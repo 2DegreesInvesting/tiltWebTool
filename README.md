@@ -23,7 +23,8 @@ pak::pak("2DegreesInvesting/tiltWebTool")
 ## Example
 
 ``` r
-pkgload::load_all()
+library(tiltWebTool)
+
 # User Name: toy
 # Password: toy
 run_app()
