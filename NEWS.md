@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9056 (2024-08-06)
+
+* New minimal toy data with real column names (#160).
+
 # tiltWebTool 0.0.0.9055 (2024-07-29)
 
 * Make version a bit smaller.
