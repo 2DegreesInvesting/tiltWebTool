@@ -17,14 +17,14 @@
 # haven't changed
 
     Code
-      indicator_choices()
+      level_choices()
     Output
-      [1] "emissions" "sector"   
+      [1] "product" "company"
 
 ---
 
     Code
-      level_choices()
+      country_choices()
     Output
-      [1] "product" "company"
+      [1] "austria"     "france"      "germany"     "netherlands" "spain"      
 

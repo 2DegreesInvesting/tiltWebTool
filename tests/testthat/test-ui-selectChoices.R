@@ -4,6 +4,6 @@ test_that("errors gracefully", {
 })
 
 test_that("haven't changed", {
-  expect_snapshot(indicator_choices())
   expect_snapshot(level_choices())
+  expect_snapshot(country_choices())
 })
