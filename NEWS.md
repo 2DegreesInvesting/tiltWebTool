@@ -1,5 +1,8 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9060 (2024-08-06)
+
+* Add authors.
 * Polish the website's reference (#163).
 
 # tiltWebTool 0.0.0.9058 (2024-08-06)
