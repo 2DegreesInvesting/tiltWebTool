@@ -9,3 +9,7 @@ reference:
 - title: Columns
   contents:
   - starts_with("cols_")
+
+authors:
+  Mauro Lepore:
+    href: https://github.com/maurolepore/
