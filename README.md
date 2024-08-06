@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tiltWebTool
+# tiltWebTool <a><img src="https://images.squarespace-cdn.com/content/v1/621e47bd3238a230485a7298/621e84e1-bb88-490f-b091-958078c72279/1tilt+dark+green.png" align="right" width="30%"></a>
 
 <!-- badges: start -->
 

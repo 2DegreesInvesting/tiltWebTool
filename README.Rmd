@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# tiltWebTool
+# tiltWebTool <a><img src="https://images.squarespace-cdn.com/content/v1/621e47bd3238a230485a7298/621e84e1-bb88-490f-b091-958078c72279/1tilt+dark+green.png" align="right" width="30%"></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/2DegreesInvesting/tiltWebTool/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/2DegreesInvesting/tiltWebTool/actions/workflows/R-CMD-check.yaml)
