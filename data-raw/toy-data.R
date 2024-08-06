@@ -55,8 +55,8 @@ toy_product <- tibble_from_names(product_names) |>
     "company_name",
     "country",
     "scenario",
-    "grouping")
-  ))
+    "grouping"
+  )))
 
 toy_product |>
   group_by(grouping_emission) |>
@@ -101,8 +101,8 @@ toy_company <- tibble_from_names(company_names) |>
     "company_name",
     "country",
     "scenario",
-    "grouping")
-  ))
+    "grouping"
+  )))
 
 toy_company |>
   group_by(grouping_emission) |>
