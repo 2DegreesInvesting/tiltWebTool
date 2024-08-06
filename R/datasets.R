@@ -1,6 +1,7 @@
 #' Datasets
 #'
 #' @name datasets
+#' @family deprecated
 #' @examples
 #' emissions
 #'

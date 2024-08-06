@@ -2,3 +2,13 @@ url: https://2degreesinvesting.github.io/tiltWebTool/
 template:
   bootstrap: 5
 
+reference:
+- title: Main
+  contents:
+  - run_app
+- title: Columns
+  contents:
+  - starts_with("cols_")
+- title: Deprecated
+  contents:
+  - has_concept("deprecated")

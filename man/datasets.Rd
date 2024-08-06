@@ -24,4 +24,5 @@ emissions
 
 sector
 }
+\concept{deprecated}
 \keyword{datasets}
