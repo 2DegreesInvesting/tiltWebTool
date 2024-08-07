@@ -1,7 +1,8 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-TODO
+NEXT
 
+* Implement selector 'grouping*' (#165).
 * Replace value "all" by ".". Reserve "all" for the literal value in the
 `grouping*` columns (#175).
 
