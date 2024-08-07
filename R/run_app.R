@@ -98,10 +98,20 @@ run_app <- function(db = here::here("db")) {
           on.exit(removeNotification(id), add = TRUE)
 
           path <- fs::path(db, input$level)
+
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
-            filter(.data$country == input$country) |>
-            filter(.data$year == as.integer(input$year)) |>
+            filter(.data$country == input$country)
+
+          if (is.na(as.integer(input$year))) {
+            out <- out |>
+              filter(is.na(.data$year))
+          } else {
+            out <- out |>
+              filter(.data$year == as.integer(input$year))
+          }
+
+          out <- out |>
             head(input$n) |>
             dplyr::collect() |>
             tibble::rowid_to_column(".")
