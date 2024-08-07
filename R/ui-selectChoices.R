@@ -15,6 +15,10 @@ level_choices <- function() {
   c("product", "company")
 }
 
+indicator_choices <- function() {
+  c("emission", "sector", "transition_risk")
+}
+
 country_choices <- function() {
   c(
     ".",

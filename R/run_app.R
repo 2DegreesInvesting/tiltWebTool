@@ -83,6 +83,7 @@ run_app <- function(db = here::here("db")) {
           # TODO: Remember to update these inputs in bindCache() below
           req(
             input$level,
+            input$indicator,
             input$country,
             input$year,
             input$scenario,
@@ -104,6 +105,13 @@ run_app <- function(db = here::here("db")) {
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name))
 
+          out <- switch(input$indicator,
+            "emission" = pick_emission(out, input$level),
+            "sector" = pick_sector(out, input$level),
+            "transition_risk" = pick_transition_risk(out, input$level),
+            stop("Unknown indicator: ", input$indicator)
+          )
+
           out <- pick_choice(out, input, "country")
           out <- pick_choice(out, input, "year", .f = as.integer)
           out <- pick_choice(out, input, "scenario")
@@ -118,6 +126,7 @@ run_app <- function(db = here::here("db")) {
         }) |>
           bindCache(
             input$level,
+            input$indicator,
             input$country,
             input$year,
             input$scenario,
