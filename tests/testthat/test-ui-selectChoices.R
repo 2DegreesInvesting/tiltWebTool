@@ -1,3 +1,7 @@
+test_that("snap", {
+  expect_snapshot(selectChoices("country"))
+})
+
 test_that("errors gracefully", {
   expect_snapshot(error = TRUE, selectChoices())
   expect_snapshot(error = TRUE, selectChoices("bad"))

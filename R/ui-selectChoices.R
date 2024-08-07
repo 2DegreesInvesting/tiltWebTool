@@ -12,13 +12,13 @@ level_choices <- function() {
 }
 
 country_choices <- function() {
-  c("austria", "france", "germany", "netherlands", "spain")
+  c("all", "austria", "france", "germany", "netherlands", "spain")
 }
 
 year_choices <- function() {
-  c(2030L, 2050L, NA_integer_)
+  c("all", "2030", "2050", "NA")
 }
 
-indicator_choices <- function() {
-  c("emissions", "sector")
+scenario_choices <- function() {
+  c("all", "NZ 2050", "1.5C RPS", "NA")
 }
