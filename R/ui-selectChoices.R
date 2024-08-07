@@ -15,6 +15,10 @@ country_choices <- function() {
   c("austria", "france", "germany", "netherlands", "spain")
 }
 
+year_choices <- function() {
+  c(2030L, 2050L, NA_integer_)
+}
+
 indicator_choices <- function() {
   c("emissions", "sector")
 }

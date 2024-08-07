@@ -84,6 +84,7 @@ run_app <- function(db = here::here("db")) {
           req(
             input$level,
             input$country,
+            input$year,
             input$name,
             input$n
           )
@@ -100,6 +101,7 @@ run_app <- function(db = here::here("db")) {
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
             filter(.data$country == input$country) |>
+            filter(.data$year == input$year) |>
             head(input$n) |>
             dplyr::collect() |>
             tibble::rowid_to_column(".")
@@ -109,6 +111,7 @@ run_app <- function(db = here::here("db")) {
           bindCache(
             input$level,
             input$country,
+            input$year,
             input$name,
             input$n
           ) |>
