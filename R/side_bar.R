@@ -7,6 +7,7 @@ side_bar <- function() {
       placeholder = "To match all use dot ."
     ),
     selectChoices("level"),
+    selectChoices("indicator"),
     selectChoices("country"),
     selectChoices("year"),
     selectChoices("scenario"),
