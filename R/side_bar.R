@@ -10,6 +10,7 @@ side_bar <- function() {
     selectChoices("country"),
     selectChoices("year"),
     selectChoices("scenario"),
+    selectChoices("grouping_emission"),
     sliderInput("n", "Number of rows", value = 5, min = 5, max = 50, step = 5),
     actionButton("go", "Go!"),
     request_data()

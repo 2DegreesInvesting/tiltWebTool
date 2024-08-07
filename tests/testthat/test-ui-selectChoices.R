@@ -10,4 +10,7 @@ test_that("errors gracefully", {
 test_that("haven't changed", {
   expect_snapshot(level_choices())
   expect_snapshot(country_choices())
+  expect_snapshot(year_choices())
+  expect_snapshot(scenario_choices())
+  expect_snapshot(grouping_emission_choices())
 })

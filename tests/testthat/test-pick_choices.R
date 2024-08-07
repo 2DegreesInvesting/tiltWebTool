@@ -1,6 +1,6 @@
 test_that("with 'all' yields all data", {
   data <- tibble::tibble(x = c("a", "b", "c"))
-  input <- list(x = "all")
+  input <- list(x = ".")
   out <- pick_choice(data, input, "x")
   expect_equal(out, data)
 })

@@ -86,6 +86,7 @@ run_app <- function(db = here::here("db")) {
             input$country,
             input$year,
             input$scenario,
+            input$grouping_emission,
             input$name,
             input$n
           )
@@ -106,6 +107,7 @@ run_app <- function(db = here::here("db")) {
           out <- pick_choice(out, input, "country")
           out <- pick_choice(out, input, "year", .f = as.integer)
           out <- pick_choice(out, input, "scenario")
+          out <- pick_choice(out, input, "grouping_emission")
 
           out <- out |>
             head(input$n) |>
@@ -117,8 +119,9 @@ run_app <- function(db = here::here("db")) {
           bindCache(
             input$level,
             input$country,
-            input$scenario,
             input$year,
+            input$scenario,
+            input$grouping_emission,
             input$name,
             input$n
           ) |>

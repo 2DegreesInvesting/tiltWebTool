@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+TODO
+
+* Replace value "all" by ".". Reserve "all" for the literal value in the
+`grouping*` columns (#175).
+
 # tiltWebTool 0.0.0.9064 (2024-08-07)
 
 * `fmt_title()` now handles multi-word strings (#177).
