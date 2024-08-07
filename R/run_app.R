@@ -80,7 +80,13 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
-          req(input$level, input$name, input$n)
+          # TODO: Remember to update these inputs in bindCache() below
+          req(
+            input$level,
+            input$country,
+            input$name,
+            input$n
+          )
 
           id <- showNotification(
             "Big data, hold on ...",
@@ -93,13 +99,19 @@ run_app <- function(db = here::here("db")) {
           path <- fs::path(db, input$level)
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
+            filter(.data$country == input$country) |>
             head(input$n) |>
             dplyr::collect() |>
             tibble::rowid_to_column(".")
 
           out
         }) |>
-          bindCache(input$level, input$name, input$n) |>
+          bindCache(
+            input$level,
+            input$country,
+            input$name,
+            input$n
+          ) |>
           bindEvent(input$go)
 
         output$dataset <- renderTable(dataset())

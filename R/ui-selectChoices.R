@@ -7,10 +7,14 @@ selectChoices <- function(id, details = NULL) {
   )
 }
 
-indicator_choices <- function() {
-  c("emissions", "sector")
+level_choices <- function() {
+  c("product", "company")
 }
 
-level_choices <- function() {
-  indicator_levels()
+country_choices <- function() {
+  c("austria", "france", "germany", "netherlands", "spain")
+}
+
+indicator_choices <- function() {
+  c("emissions", "sector")
 }

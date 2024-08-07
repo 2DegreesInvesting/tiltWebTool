@@ -30,6 +30,8 @@ grouping_emission <- product |>
   collect() |>
   pull()
 
+.n <- length(grouping_emission)
+
 scenario <- product |>
   distinct(scenario) |>
   collect() |>
@@ -46,7 +48,7 @@ toy_product <- tibble_from_names(product_names) |>
   mutate(
     companies_id = "abc",
     company_name = "abc",
-    country = "germany",
+    country = sample(c("germany", "netherlands"), .n, replace = TRUE),
     grouping_transition_risk = grouping_emission,
     scenario = sample(scenario, length(grouping_emission), replace = TRUE)
   ) |>
@@ -76,6 +78,8 @@ grouping_emission <- company |>
   collect() |>
   pull()
 
+.n <- length(grouping_emission)
+
 scenario <- company |>
   distinct(scenario) |>
   collect() |>
@@ -92,7 +96,7 @@ toy_company <- tibble_from_names(company_names) |>
   mutate(
     companies_id = "abc",
     company_name = "abc",
-    country = "germany",
+    country = sample(c("germany", "netherlands"), .n, replace = TRUE),
     grouping_transition_risk = grouping_emission,
     scenario = sample(scenario, length(grouping_emission), replace = TRUE)
   ) |>
