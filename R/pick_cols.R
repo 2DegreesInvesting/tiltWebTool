@@ -11,7 +11,7 @@ pick_emission <- function(data, level = level_choices()) {
 }
 
 pick_sector <- function(data, level = level_choices()) {
-  level <- rlang::arg_match(level)
+  level <- match.arg(level)
 
   switch(level,
     "product" = select(data, cols_product_sector()),
@@ -21,7 +21,7 @@ pick_sector <- function(data, level = level_choices()) {
 }
 
 pick_transition_risk <- function(data, level = level_choices()) {
-  level <- rlang::arg_match(level)
+  level <- match.arg(level)
 
   switch(level,
     "product" = select(data, cols_product_transition_risk()),
