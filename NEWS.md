@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9063 (2024-08-07)
+
+* Implement selector 'scenario' (#166).
+* Add value "all" to relevant selectors (#175).
+
 # tiltWebTool 0.0.0.9062 (2024-08-07)
 
 * Implement selector 'year' (#173).
