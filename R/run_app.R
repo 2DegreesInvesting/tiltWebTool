@@ -85,6 +85,7 @@ run_app <- function(db = here::here("db")) {
             input$level,
             input$country,
             input$year,
+            input$scenario,
             input$name,
             input$n
           )
@@ -100,16 +101,11 @@ run_app <- function(db = here::here("db")) {
           path <- fs::path(db, input$level)
 
           out <- arrow::open_dataset(path) |>
-            filter(grepl(input$name, .data$company_name)) |>
-            filter(.data$country == input$country)
+            filter(grepl(input$name, .data$company_name))
 
-          if (is.na(as.integer(input$year))) {
-            out <- out |>
-              filter(is.na(.data$year))
-          } else {
-            out <- out |>
-              filter(.data$year == as.integer(input$year))
-          }
+          out <- pick_choice(out, input, "country")
+          out <- pick_choice(out, input, "year", .f = as.integer)
+          out <- pick_choice(out, input, "scenario")
 
           out <- out |>
             head(input$n) |>
@@ -121,6 +117,7 @@ run_app <- function(db = here::here("db")) {
           bindCache(
             input$level,
             input$country,
+            input$scenario,
             input$year,
             input$name,
             input$n

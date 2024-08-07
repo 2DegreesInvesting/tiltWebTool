@@ -9,6 +9,7 @@ side_bar <- function() {
     selectChoices("level"),
     selectChoices("country"),
     selectChoices("year"),
+    selectChoices("scenario"),
     sliderInput("n", "Number of rows", value = 5, min = 5, max = 50, step = 5),
     actionButton("go", "Go!"),
     request_data()

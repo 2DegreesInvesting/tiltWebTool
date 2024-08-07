@@ -1,3 +1,21 @@
+# snap
+
+    Code
+      selectChoices("country")
+    Output
+      <div class="form-group shiny-input-container">
+        <label class="control-label" id="country-label" for="country">Country </label>
+        <div>
+          <select id="country" class="shiny-input-select"><option value="all" selected>all</option>
+      <option value="austria">austria</option>
+      <option value="france">france</option>
+      <option value="germany">germany</option>
+      <option value="netherlands">netherlands</option>
+      <option value="spain">spain</option></select>
+          <script type="application/json" data-for="country" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+        </div>
+      </div>
+
 # errors gracefully
 
     Code
@@ -26,5 +44,6 @@
     Code
       country_choices()
     Output
-      [1] "austria"     "france"      "germany"     "netherlands" "spain"      
+      [1] "all"         "austria"     "france"      "germany"     "netherlands"
+      [6] "spain"      
 
