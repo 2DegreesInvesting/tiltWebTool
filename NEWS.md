@@ -1,6 +1,6 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-NEXT
+# tiltWebTool 0.0.0.9065 (2024-08-07)
 
 * Implement selector 'grouping*' (#165).
 * Replace value "all" by ".". Reserve "all" for the literal value in the
