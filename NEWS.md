@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9061 (2024-08-07)
+
+* Implement selector `country` (#172).
+
 # tiltWebTool 0.0.0.9060 (2024-08-06)
 
 * Add authors.
