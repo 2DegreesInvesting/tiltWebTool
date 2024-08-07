@@ -49,6 +49,7 @@ toy_product <- tibble_from_names(product_names) |>
     companies_id = "abc",
     company_name = "abc",
     country = sample(c("germany", "netherlands"), .n, replace = TRUE),
+    year = sample(c("2030", "2050"), .n, replace = TRUE),
     grouping_transition_risk = grouping_emission,
     scenario = sample(scenario, length(grouping_emission), replace = TRUE)
   ) |>
@@ -97,6 +98,7 @@ toy_company <- tibble_from_names(company_names) |>
     companies_id = "abc",
     company_name = "abc",
     country = sample(c("germany", "netherlands"), .n, replace = TRUE),
+    year = sample(c("2030", "2050"), .n, replace = TRUE),
     grouping_transition_risk = grouping_emission,
     scenario = sample(scenario, length(grouping_emission), replace = TRUE)
   ) |>
