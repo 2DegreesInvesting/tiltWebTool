@@ -2,9 +2,7 @@
 
 # tiltWebTool 0.0.0.9066 (2024-08-07)
 
-* Implement selector 'indicator'
-* Fix
-
+* Implement selector 'indicator' (#180).
 
 # tiltWebTool 0.0.0.9065 (2024-08-07)
 
