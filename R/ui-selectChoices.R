@@ -1,24 +1,58 @@
-selectChoices <- function(id, details = NULL) {
+selectChoices <- function(id) {
   choices <- get(paste0(id, "_choices"))
   selectInput(
     id,
-    paste(tools::toTitleCase(id), details),
+    fmt_title(id),
     choices = choices()
   )
 }
+
+# TODO:
+# * Maybe move to select-choices.yaml?
+# * CI to ensure this captures all choices in real data
 
 level_choices <- function() {
   c("product", "company")
 }
 
 country_choices <- function() {
-  c("all", "austria", "france", "germany", "netherlands", "spain")
+  c(
+    ".",
+    "austria",
+    "france",
+    "germany",
+    "netherlands",
+    "spain"
+  )
 }
 
 year_choices <- function() {
-  c("all", "2030", "2050", "NA")
+  c(
+    ".",
+    "2030",
+    "2050",
+    "NA"
+  )
 }
 
 scenario_choices <- function() {
-  c("all", "NZ 2050", "1.5C RPS", "NA")
+  c(
+    ".",
+    "NZ 2050",
+    "1.5C RPS",
+    "NA"
+  )
+}
+
+grouping_emission_choices <- function() {
+  c(
+    ".",
+    "all",
+    "isic_4digit",
+    "tilt_subsector",
+    "unit",
+    "unit_isic_4digit",
+    "unit_tilt_subsector",
+    "NA"
+  )
 }
