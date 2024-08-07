@@ -101,7 +101,7 @@ run_app <- function(db = here::here("db")) {
           out <- arrow::open_dataset(path) |>
             filter(grepl(input$name, .data$company_name)) |>
             filter(.data$country == input$country) |>
-            filter(.data$year == input$year) |>
+            filter(.data$year == as.integer(input$year)) |>
             head(input$n) |>
             dplyr::collect() |>
             tibble::rowid_to_column(".")
