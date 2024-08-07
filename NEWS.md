@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9066 (2024-08-07)
+
+* Implement selector 'indicator'
+* Fix
+
+
 # tiltWebTool 0.0.0.9065 (2024-08-07)
 
 * Implement selector 'grouping*' (#165).
