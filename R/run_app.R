@@ -80,7 +80,13 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
-          req(input$level, input$name, input$n)
+          # TODO: Remember to update these inputs in bindCache() below
+          req(
+            input$level,
+            input$country,
+            input$name,
+            input$n
+          )
 
           id <- showNotification(
             "Big data, hold on ...",
@@ -100,7 +106,12 @@ run_app <- function(db = here::here("db")) {
 
           out
         }) |>
-          bindCache(input$level, input$name, input$n) |>
+          bindCache(
+            input$level,
+            input$country,
+            input$name,
+            input$n
+          ) |>
           bindEvent(input$go)
 
         output$dataset <- renderTable(dataset())
