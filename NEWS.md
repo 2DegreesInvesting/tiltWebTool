@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9062 (2024-08-07)
+
+* Implement selector 'year' (#173).
+
 # tiltWebTool 0.0.0.9061 (2024-08-07)
 
 * Implement selector `country` (#172).
