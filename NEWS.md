@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9064 (2024-08-07)
+
+* `fmt_title()` now handles multi-word strings (#177).
+
 # tiltWebTool 0.0.0.9063 (2024-08-07)
 
 * Implement selector 'scenario' (#166).
