@@ -12,6 +12,6 @@ theme <- function() {
     base_font = theme_font("base_font"),
     code_font = theme_font("code_font"),
     heading_font = theme_font("heading_font"),
-    font_scale = 0.75
+    font_scale = get_theme("font_scale")
   )
 }
