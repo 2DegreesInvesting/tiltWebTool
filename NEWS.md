@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9068 (2024-08-08)
+
+* The theme now uses `font_scale = 1.5` (#182).
+
 # tiltWebTool 0.0.0.9067 (2024-08-08)
 
 * Use latest dictionary (#181).
