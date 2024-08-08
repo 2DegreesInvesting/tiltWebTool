@@ -16,3 +16,5 @@ default:
   code_font_fallback: "monospace"
   heading_font: "Roboto Condensed"
   heading_font_fallback: "sans-serifx"
+
+  font_scale: 1.5

@@ -6,3 +6,7 @@ theme_font <- function(x) {
 
   font_collection(font_google(main, local = TRUE), fallback)
 }
+
+get_theme <- function(x) {
+  config::get(x, file = config_path("theme"))
+}

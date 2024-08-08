@@ -1,4 +1,4 @@
-logo <- function() {
+get_logo <- function() {
   src <- config::get(c("home", "logo"), file = config_path("link"))
   logo <- img(src = src, height = "30px", style = "vertical-align: middle;")
 
