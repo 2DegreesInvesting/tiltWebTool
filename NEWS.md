@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9067 (2024-08-08)
+
+* Use latest dictionary (#181).
+
 # tiltWebTool 0.0.0.9066 (2024-08-07)
 
 * Implement selector 'indicator' (#180).
