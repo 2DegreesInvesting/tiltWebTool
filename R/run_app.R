@@ -34,7 +34,7 @@ run_app <- function(db = here::here("db")) {
   ui <- page_navbar(
     id = "tabs",
     window_title = "tilt",
-    title = logo(),
+    title = get_logo(),
     theme = theme(),
     collapsible = TRUE,
     login_tab

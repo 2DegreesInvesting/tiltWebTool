@@ -19,5 +19,5 @@ side_bar <- function() {
 }
 
 request_data <- function() {
-  tags$p(link("download"), " under ", link("license"))
+  tags$p(get_link("download"), " under ", get_link("license"))
 }

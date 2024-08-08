@@ -1,14 +1,14 @@
 theme <- function() {
   bs_theme(
     version = theme_version(),
-    bg = theme_color("bg"),
-    fg = theme_color("fg"),
-    primary = theme_color("primary"),
-    secondary = theme_color("secondary"),
-    success = theme_color("success"),
-    info = theme_color("info"),
-    warning = theme_color("warning"),
-    danger = theme_color("danger"),
+    bg = get_theme("bg"),
+    fg = get_theme("fg"),
+    primary = get_theme("primary"),
+    secondary = get_theme("secondary"),
+    success = get_theme("success"),
+    info = get_theme("info"),
+    warning = get_theme("warning"),
+    danger = get_theme("danger"),
     base_font = theme_font("base_font"),
     code_font = theme_font("code_font"),
     heading_font = theme_font("heading_font")
