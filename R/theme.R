@@ -11,6 +11,7 @@ theme <- function() {
     danger = get_theme("danger"),
     base_font = theme_font("base_font"),
     code_font = theme_font("code_font"),
-    heading_font = theme_font("heading_font")
+    heading_font = theme_font("heading_font"),
+    font_scale = 0.75
   )
 }
