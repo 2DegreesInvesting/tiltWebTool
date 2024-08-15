@@ -4,6 +4,14 @@ default:
     logo: "https://github.com/2DegreesInvesting/tiltWebTool/raw/main/inst/logo/logo.png"
     link: "https://www.tiltsmes.org/"
 
+  welcome:
+    text: "feedback here"
+    link: "https://docs.google.com/forms/d/1cwPCtlW3xP97aNIZ9Isge2zw5nJ-JnXvteckCO4oawo/viewform?edit_requested=true"
+
+  methodology:
+    text: "methodology here"
+    link: "https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/edit?usp=drive_web&ouid=115108949015890448832&rtpof=true"
+  
   download:
     text: "Request data"
     link: "https://docs.google.com/forms/d/e/1FAIpQLScWRHg5tKRKMi8TBR5YuahIhj2Lmn2i9V_wzBcdU_wJxO5RdQ/viewform"
