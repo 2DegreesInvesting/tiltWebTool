@@ -26,7 +26,11 @@ run_app <- function(db = here::here("db")) {
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(tableOutput(dataset_id()))
   )))
-  dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(tableOutput(dictionary_id())))
+  dictionary_tab <- nav_panel(
+    fmt_title(dictionary_id()),
+    text_card(dictionary_id()),
+    card(tableOutput(dictionary_id()))
+  )
   spacer_tab <- nav_spacer()
 
   ui <- page_navbar(
