@@ -1,12 +1,12 @@
 default:
 
  welcome:
-    header: "Welcome to *tilt*'s online portal"
+    header: "Introduction"
     src: "https://www.youtube.com/embed/5lTpwTqgj_0?si=zNYZNlOyGYMnqfSZ"
     width: 560
     height: 315
-    
- method:
+
+ methodology:
     header: "Methodology"
     src: "https://www.youtube.com/embed/WXNCYmXq7nw?si=xqGETa2mOsGSELg8"
     width: 560

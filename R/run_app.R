@@ -21,19 +21,14 @@ run_app <- function(db = here::here("db")) {
   welcome_tab <- nav_panel(
     fmt_title(welcome_id()),
     text_card(welcome_id()),
-    iframe_card("welcome"),
-    iframe_card("method")
+    iframe_card(welcome_id()),
+    iframe_card(methodology_id())
   )
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(tableOutput(dataset_id()))
   )))
   dictionary_tab <- nav_panel(fmt_title(dictionary_id()), card(tableOutput(dictionary_id())))
   spacer_tab <- nav_spacer()
-  menu_tab <- nav_menu(
-    title = "More",
-    align = "right",
-    nav_panel(fmt_title(methodology_id()), text_card(methodology_id()))
-  )
 
   ui <- page_navbar(
     id = "tabs",
@@ -81,7 +76,6 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", dataset_tab)
         nav_insert("tabs", dictionary_tab)
         nav_insert("tabs", spacer_tab)
-        nav_insert("tabs", menu_tab)
 
         dataset <- reactive({
           # TODO: Remember to update these inputs in bindCache() below
