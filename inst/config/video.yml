@@ -2,7 +2,7 @@ default:
 
  welcome:
     header: "Welcome to *tilt*'s online portal"
-    src: "https://youtu.be/5lTpwTqgj_0"
+    src: "https://www.youtube.com/embed/5lTpwTqgj_0?si=zNYZNlOyGYMnqfSZ"
     width: 560
     height: 315
     
