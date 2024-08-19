@@ -1,4 +1,4 @@
-iframe_section <- function(section) {
+iframe <- function(section) {
   x <- config::get(section, file = config_path("iframe"))
 
   tags$iframe(

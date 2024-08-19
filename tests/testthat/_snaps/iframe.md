@@ -1,8 +1,8 @@
 # fails gracefully
 
     Code
-      iframe_section()
+      iframe()
     Condition
-      Error in `iframe_section()`:
+      Error in `iframe()`:
       ! argument "section" is missing, with no default
 
