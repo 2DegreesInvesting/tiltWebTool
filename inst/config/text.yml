@@ -39,15 +39,14 @@ default:
       We are interested in making our methodology as transparent as possible and
       therefore welcome feedback from financial institutions, research community
       and NGO sphere. Please let us know if you would like to be part of the
-      tilt community and offer your feedback.  
+      tilt community and offer your feedback.
 
       Contact us at https://www.tiltsmes.org/contact.
 
-
-  dictionary: 
-    header: "dictionary"
+  dictionary:
+    header: "Dictionary"
     body: >
-    The data dictionary provides detailed descriptions of the *tilt* research data, 
-    including definitions, formats, and relationships for each data element. 
-    It serves as a guide to help you understand and utilize the data accurately and 
-    consistently within your analysis or applications.
+      The data dictionary provides detailed descriptions of the *tilt* research
+      data, including definitions, formats, and relationships for each data
+      element. It serves as a guide to help you understand and utilize the data
+      accurately and consistently within your analysis or applications.
