@@ -2,7 +2,7 @@ iframe_card <- function(section) {
   x <- config::get(section, file = config_path("iframe"))
 
   header <- card_header(markdown(x$header))
-  body <- shiny::tags$iframe(
+  body <- tags$iframe(
     width = x$width,
     height = x$height,
     src = x$src,
