@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9070 (2024-08-19)
+
+* Add text explaining the dictionary (@AnneSchoenauer #198).
+
 # tiltWebTool 0.0.0.9069 (2024-08-19)
 
 * Replace the place-holder video with the "Online training" (@AnneSchoenauer
