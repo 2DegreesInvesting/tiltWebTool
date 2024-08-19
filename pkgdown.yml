@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-08-19T18:39Z
+last_built: 2024-08-19T18:43Z
 urls:
   reference: https://2degreesinvesting.github.io/tiltWebTool/reference
   article: https://2degreesinvesting.github.io/tiltWebTool/articles
