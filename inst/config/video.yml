@@ -8,6 +8,6 @@ default:
     
  method:
     header: "Methodology"
-    src: "https://youtu.be/WXNCYmXq7nw"
+    src: "https://www.youtube.com/embed/WXNCYmXq7nw?si=xqGETa2mOsGSELg8"
     width: 560
     height: 315
