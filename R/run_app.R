@@ -22,6 +22,7 @@ run_app <- function(db = here::here("db")) {
     fmt_title(welcome_id()),
     text_card(welcome_id()),
     iframe_card(welcome_id()),
+    text_card(methodology_id()),
     iframe_card(methodology_id())
   )
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
