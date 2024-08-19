@@ -42,3 +42,11 @@ default:
       tilt community and offer your feedback.
 
       Contact us at https://www.tiltsmes.org/contact.
+
+  dictionary:
+    header: "Dictionary"
+    body: >
+      The data dictionary provides detailed descriptions of the *tilt* research
+      data, including definitions, formats, and relationships for each data
+      element. It serves as a guide to help you understand and utilize the data
+      accurately and consistently within your analysis or applications.
