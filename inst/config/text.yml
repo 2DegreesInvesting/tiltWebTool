@@ -16,12 +16,19 @@ default:
   methodology:
     header: "Methodology"
     body: >
-      We are interested in making our methodology as transparent as possible and
-      therefore welcome feedback from financial institutions, research community
-      and NGO sphere. Please let us know if you would like to be part of the
-      tilt community and offer your feedback.
-
-      Contact us at https://www.tiltsmes.org/contact.
+      This paper introduces a methodology to derive climate indciators for SMEs.
+      We present two indicators: a “relative emission indicator,” 
+      based on product emission intensity, and a “transition risk indicator,” 
+      assessing risks from the low-carbon transition. These indicators, 
+      built using Life Cycle Assessment (LCA) and climate scenario data, 
+      are applied to 250,000 firms across five European countries building the 
+      research data that can be requested at the tab "data". 
+      Our method is reproducible, transparent, and scalable, requiring only three 
+      data values: the product, the business type and the location of the firm.  
+      It can be used to explore SME low-carbon transformation, climate risks, 
+      or inform financial decision-making.
+      Please find our methodology here. For further information and how to use the research data, p
+      lease watch these two online webinars.
 
   dictionary:
     header: "Dictionary"
