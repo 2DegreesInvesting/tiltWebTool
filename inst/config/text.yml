@@ -41,10 +41,11 @@ default:
   climate_action_guide:
     header: "Climate action guide"
     body: >
-      A first version of our climate action guide that collects revenue, and
-      climate action information in a standardized way from the SME and can be
-      used to (i) enhance the automated output data quality as well as (ii) engage
-      with the SME clients and offer tailored sustainability improvement loans. The
-      idea is that SMEs only need 15 minutes to fill in the questionnaire with
-      "yes" and "no" questions. We already tested the Climate Action Guide with 3
-      SMEs.
+      A first version of our climate action guide that collects revenue,
+      and climate action information in a standardized way from the SME and
+      can be used to (i) enhance the automated output data quality as well
+      as (ii) engage with the SME clients and offer tailored sustainability
+      improvement loans. The idea is that SMEs only need 15 minutes to fill
+      in the questionnaire with "yes" and "no" questions. We already tested
+      the Climate Action Guide with 3 SMEs.
+
