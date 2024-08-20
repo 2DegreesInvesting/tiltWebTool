@@ -23,5 +23,5 @@ methodology_id <- function() {
 }
 
 guide_id <- function() {
-  "guide"
+  "climate_action_guide"
 }

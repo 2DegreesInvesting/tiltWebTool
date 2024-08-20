@@ -27,10 +27,6 @@ run_app <- function(db = here::here("db")) {
       text_card(methodology_id()),
       card(iframe(methodology_id())),
       card(get_link(methodology_id()))
-    ),
-    card(
-      text_card(guide_id()),
-      card(get_link(guide_id()))
     )
   )
 
@@ -42,6 +38,14 @@ run_app <- function(db = here::here("db")) {
     fmt_title(dictionary_id()),
     text_card(dictionary_id()),
     card(tableOutput(dictionary_id()))
+  )
+
+  guide_tab <- nav_panel(
+    fmt_title(guide_id()),
+    card(
+      text_card(guide_id()),
+      card(get_link(guide_id()))
+    )
   )
 
   spacer_tab <- nav_spacer()
@@ -90,6 +94,7 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", welcome_tab, select = TRUE)
         nav_insert("tabs", dataset_tab)
         nav_insert("tabs", dictionary_tab)
+        nav_insert("tabs", guide_tab)
         nav_insert("tabs", spacer_tab)
 
         dataset <- reactive({

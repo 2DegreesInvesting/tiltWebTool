@@ -12,8 +12,8 @@ default:
     text: "CC BY-NC-ND 4.0"
     link: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 
-  guide:
-    text: "Download the climate action questionnaire"
+  climate_action_guide:
+    text: "Download the climate action guide"
     link: "https://github.com/user-attachments/files/16625497/Climate_Action_Questionnaire_tilt_user_platform.xlsx"
 
   methodology:
