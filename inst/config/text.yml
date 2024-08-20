@@ -13,8 +13,8 @@ default:
       these decisions and customise methodological choices to best suit their
       specific needs.
 
-  methodology:
-    header: "Methodology"
+  method:
+    header: "Method"
     body: >
       This paper introduces a methodology to derive climate indciators for SMEs.
       We present two indicators: a "relative emission indicator",
