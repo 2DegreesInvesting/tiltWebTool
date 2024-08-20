@@ -27,10 +27,6 @@ run_app <- function(db = here::here("db")) {
       text_card(methodology_id()),
       card(iframe(methodology_id())),
       card(get_link(methodology_id()))
-    ),
-    card(
-      text_card(guide_id()),
-      card(get_link(guide_id()))
     )
   )
 
@@ -45,7 +41,11 @@ run_app <- function(db = here::here("db")) {
   )
 
   guide_tab <- nav_panel(
-    fmt_title(guide_id())
+    fmt_title(guide_id()),
+    card(
+      text_card(guide_id()),
+      card(get_link(guide_id()))
+    )
   )
 
   spacer_tab <- nav_spacer()
