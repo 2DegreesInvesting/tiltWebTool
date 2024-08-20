@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9073 (2024-08-20)
+
+* Remove the "Disclaimer" tab (#201).
+
 # tiltWebTool 0.0.0.9072 (2024-08-20)
 
 * New section 'Climate action guide' (#200).
