@@ -19,7 +19,7 @@ video_id <- function() {
 }
 
 methodology_id <- function() {
-  "methodology"
+  "method"
 }
 
 guide_id <- function() {

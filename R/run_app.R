@@ -22,11 +22,14 @@ run_app <- function(db = here::here("db")) {
     card(
       text_card(welcome_id()),
       card(iframe(welcome_id()))
-    ),
+    )
+  )
+
+  methodology_tab <- nav_panel(
+    fmt_title(methodology_id()),
     card(
       text_card(methodology_id()),
-      card(iframe(methodology_id())),
-      card(get_link(methodology_id()))
+      card(iframe(methodology_id()))
     )
   )
 
@@ -94,6 +97,7 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", welcome_tab, select = TRUE)
         nav_insert("tabs", dataset_tab)
         nav_insert("tabs", dictionary_tab)
+        nav_insert("tabs", methodology_tab)
         nav_insert("tabs", guide_tab)
         nav_insert("tabs", spacer_tab)
 
