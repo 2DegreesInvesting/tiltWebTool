@@ -3,7 +3,7 @@ home_id <- function() {
 }
 
 welcome_id <- function() {
-  "welcome"
+  "welcoming_page"
 }
 
 dataset_id <- function() {

@@ -1,6 +1,6 @@
 default:
 
-  welcome:
+  welcoming_page:
     header: "Welcome to *tilt*'s online portal"
     body: >
       *tilt* is a database designed to provide detailed insights into firms,
