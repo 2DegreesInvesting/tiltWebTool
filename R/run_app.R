@@ -19,18 +19,31 @@ run_app <- function(db = here::here("db")) {
 
   welcome_tab <- nav_panel(
     fmt_title(welcome_id()),
-    card(text_card(welcome_id()), card(iframe(welcome_id()))),
-    card(text_card(methodology_id()), card(iframe(methodology_id()))),
-    card(text_card(guide_id()), card(get_link(guide_id())))
+    card(
+      text_card(welcome_id()),
+      card(iframe(welcome_id()))
+    ),
+    card(
+      text_card(methodology_id()),
+      card(iframe(methodology_id())),
+      card(get_link(methodology_id()))
+    ),
+    card(
+      text_card(guide_id()),
+      card(get_link(guide_id()))
+    )
   )
+
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(tableOutput(dataset_id()))
   )))
+
   dictionary_tab <- nav_panel(
     fmt_title(dictionary_id()),
     text_card(dictionary_id()),
     card(tableOutput(dictionary_id()))
   )
+
   spacer_tab <- nav_spacer()
 
   ui <- page_navbar(
