@@ -17,12 +17,11 @@ run_app <- function(db = here::here("db")) {
     card(tags$sub(app_version()))
   )
 
-  disclaimer_tab <- nav_panel(fmt_title(disclaimer_id()), text_card(disclaimer_id()))
   welcome_tab <- nav_panel(
     fmt_title(welcome_id()),
-    card(text_card(welcome_id()), iframe(welcome_id())),
-    card(text_card(methodology_id()), iframe(methodology_id())),
-    card(text_card(guide_id()), get_link(guide_id()))
+    card(text_card(welcome_id()), card(iframe(welcome_id()))),
+    card(text_card(methodology_id()), card(iframe(methodology_id()))),
+    card(text_card(guide_id()), card(get_link(guide_id())))
   )
   dataset_tab <- nav_panel(fmt_title(dataset_id()), card(layout_sidebar(
     sidebar = side_bar(), card(tableOutput(dataset_id()))
@@ -75,8 +74,7 @@ run_app <- function(db = here::here("db")) {
     observeEvent(credentials()$user_auth, {
       if (credentials()$user_auth) {
         nav_remove("tabs", "login")
-        nav_insert("tabs", disclaimer_tab, select = TRUE)
-        nav_insert("tabs", welcome_tab)
+        nav_insert("tabs", welcome_tab, select = TRUE)
         nav_insert("tabs", dataset_tab)
         nav_insert("tabs", dictionary_tab)
         nav_insert("tabs", spacer_tab)
