@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9074 (2024-08-20)
+
+* Add link to the methodology document (#197). It automatically republishes
+when changes are made.
+
 # tiltWebTool 0.0.0.9073 (2024-08-20)
 
 * Remove the "Disclaimer" tab (#201).
