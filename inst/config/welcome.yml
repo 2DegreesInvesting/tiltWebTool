@@ -38,3 +38,11 @@ default:
         <li><strong>Climate Action Guide</strong>: Discover our climate action guide, which collects further climate action information from SMEs.</li>
       </ul>
 
+  card3:
+    p1: >
+      #### We Value Your Feedback
+
+      We strive for transparency and welcome input from financial institutions,
+      researchers, and NGOs. Join the *tilt* community and share your feedback
+      [here](FIXME).
+

@@ -25,6 +25,9 @@ run_app <- function(db = here::here("db")) {
     ),
     card(
       welcome_text("card2")
+    ),
+    card(
+      welcome_text("card3")
     )
   )
 
