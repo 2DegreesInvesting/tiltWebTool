@@ -17,17 +17,17 @@ default:
     header: "Methodology"
     body: >
       This paper introduces a methodology to derive climate indciators for SMEs.
-      We present two indicators: a “relative emission indicator,” 
-      based on product emission intensity, and a “transition risk indicator,” 
-      assessing risks from the low-carbon transition. These indicators, 
-      built using Life Cycle Assessment (LCA) and climate scenario data, 
-      are applied to 250,000 firms across five European countries building the 
-      research data that can be requested at the tab "data". 
-      Our method is reproducible, transparent, and scalable, requiring only three 
-      data values: the product, the business type and the location of the firm.  
-      It can be used to explore SME low-carbon transformation, climate risks, 
+      We present two indicators: a “relative emission indicator,”
+      based on product emission intensity, and a “transition risk indicator,”
+      assessing risks from the low-carbon transition. These indicators,
+      built using Life Cycle Assessment (LCA) and climate scenario data,
+      are applied to 250,000 firms across five European countries building the
+      research data that can be requested at the tab "data".
+      Our method is reproducible, transparent, and scalable, requiring only three
+      data values: the product, the business type and the location of the firm.
+      It can be used to explore SME low-carbon transformation, climate risks,
       or inform financial decision-making.
-      Please find our methodology here. For further information and how to use the research data, 
+      Please find our methodology here. For further information and how to use the research data,
       please watch these two online webinars.
 
   dictionary:
@@ -38,7 +38,7 @@ default:
       element. It serves as a guide to help you understand and utilize the data
       accurately and consistently within your analysis or applications.
 
-  guide:
+  climate_action_guide:
     header: "Climate action guide"
     body: >
       A first version of our climate action guide that collects revenue, and

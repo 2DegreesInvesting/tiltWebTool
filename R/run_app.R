@@ -44,6 +44,10 @@ run_app <- function(db = here::here("db")) {
     card(tableOutput(dictionary_id()))
   )
 
+  guide_tab <- nav_panel(
+    fmt_title(guide_id())
+  )
+
   spacer_tab <- nav_spacer()
 
   ui <- page_navbar(
@@ -90,6 +94,7 @@ run_app <- function(db = here::here("db")) {
         nav_insert("tabs", welcome_tab, select = TRUE)
         nav_insert("tabs", dataset_tab)
         nav_insert("tabs", dictionary_tab)
+        nav_insert("tabs", guide_tab)
         nav_insert("tabs", spacer_tab)
 
         dataset <- reactive({
