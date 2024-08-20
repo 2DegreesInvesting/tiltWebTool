@@ -1,15 +1,19 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-# tiltWebTool 0.0.0.9074 (2024-08-20)
+# tiltWebTool 0.0.0.9075 (2024-08-20)
+
+* Update the text under "Methodology" (@AnneSchoenauer #204).
+
+# tiltWebTool 0.0.0.9074 (2024-08-19)
 
 * Add link to the methodology document (#197). It automatically republishes
 when changes are made.
 
-# tiltWebTool 0.0.0.9073 (2024-08-20)
+# tiltWebTool 0.0.0.9073 (2024-08-19)
 
 * Remove the "Disclaimer" tab (#201).
 
-# tiltWebTool 0.0.0.9072 (2024-08-20)
+# tiltWebTool 0.0.0.9072 (2024-08-19)
 
 * New section 'Climate action guide' (#200).
 
