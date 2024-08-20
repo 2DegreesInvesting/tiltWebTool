@@ -17,19 +17,18 @@ default:
     header: "Method"
     body: >
       [This paper](https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/pub)
-      introduces a methodology to derive climate indciators for SMEs.
-      We present two indicators: a "relative emission indicator",
-      based on product emission intensity, and a "transition risk indicator",
-      assessing risks from the low-carbon transition. These indicators,
-      built using Life Cycle Assessment (LCA) and climate scenario data,
-      are applied to 250,000 firms across five European countries building the
-      research data that can be requested at the tab "data".
-      Our method is reproducible, transparent, and scalable, requiring only three
-      data values: the product, the business type and the location of the firm.
-      It can be used to explore SME low-carbon transformation, climate risks,
-      or inform financial decision-making.
-      Please find our methodology here. For further information and how to use the research data,
-      please watch these two online webinars.
+      introduces a methodology to derive climate indicators for SMEs. We present
+      two indicators: a "relative emission indicator", based on product
+      emission intensity, and a "transition risk indicator", assessing risks
+      from the low-carbon transition. These indicators, built using Life Cycle
+      Assessment (LCA) and climate scenario data, are applied to 250,000 firms
+      across five European countries, creating the research data that can be
+      requested at the tab data. Our method is reproducible, transparent, and
+      scalable, requiring only three data values: the product, the business
+      type and the firm's location. It can be used to explore SME low-carbon
+      transformation climate risks or inform financial decision-making. Please
+      find our methodology here. For further information on how to use the
+      research data, please watch the two online webinars below.
 
   dictionary:
     header: "Dictionary"
