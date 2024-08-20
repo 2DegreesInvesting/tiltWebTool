@@ -20,26 +20,7 @@ run_app <- function(db = here::here("db")) {
   welcome_tab <- nav_panel(
     fmt_title(welcome_id()),
     card(
-      shiny::markdown(config::get(
-        c(welcome_id(), "paragraph_1"),
-        file = config_path(welcome_id()))
-      ),
-      shiny::markdown(config::get(
-        c(welcome_id(), "paragraph_2"),
-        file = config_path(welcome_id()))
-      ),
-      shiny::markdown(config::get(
-        c(welcome_id(), "paragraph_3"),
-        file = config_path(welcome_id()))
-      ),
-      shiny::markdown(config::get(
-        c(welcome_id(), "paragraph_4"),
-        file = config_path(welcome_id()))
-      ),
-      shiny::markdown(config::get(
-        c(welcome_id(), "paragraph_5"),
-        file = config_path(welcome_id()))
-      ),
+      welcome_text(),
       iframe(welcome_id())
     )
   )
