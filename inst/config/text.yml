@@ -16,7 +16,8 @@ default:
   method:
     header: "Method"
     body: >
-      This paper introduces a methodology to derive climate indciators for SMEs.
+      [This paper](https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/pub)
+      introduces a methodology to derive climate indciators for SMEs.
       We present two indicators: a "relative emission indicator",
       based on product emission intensity, and a "transition risk indicator",
       assessing risks from the low-carbon transition. These indicators,
