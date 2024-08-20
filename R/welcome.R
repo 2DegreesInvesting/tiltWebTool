@@ -3,3 +3,6 @@ welcome_text <- function() {
   lapply(text, \(x) shiny::markdown(x))
 }
 
+welcome_title <- function() {
+  "welcoming page"
+}

@@ -1,6 +1,6 @@
 default:
 
- welcoming_page:
+ welcome:
     header: "Introduction"
     src: "https://www.youtube.com/embed/5lTpwTqgj_0?si=zNYZNlOyGYMnqfSZ"
     width: 560
