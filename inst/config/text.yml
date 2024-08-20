@@ -17,8 +17,8 @@ default:
     header: "Methodology"
     body: >
       This paper introduces a methodology to derive climate indciators for SMEs.
-      We present two indicators: a "relative emission indicator,"
-      based on product emission intensity, and a "transition risk indicator,"
+      We present two indicators: a "relative emission indicator",
+      based on product emission intensity, and a "transition risk indicator",
       assessing risks from the low-carbon transition. These indicators,
       built using Life Cycle Assessment (LCA) and climate scenario data,
       are applied to 250,000 firms across five European countries building the
