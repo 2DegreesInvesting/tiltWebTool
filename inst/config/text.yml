@@ -3,19 +3,21 @@ default:
   method:
     header: "Method"
     body: >
-      [This paper](https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/pub)
-      introduces a method to derive climate indicators for SMEs. We present
-      two indicators: a "relative emission indicator", based on product
-      emission intensity, and a "transition risk indicator", assessing risks
-      from the low-carbon transition. These indicators, built using Life Cycle
-      Assessment (LCA) and climate scenario data, are applied to 250,000 firms
-      across five European countries, creating the research data that can be
-      requested at the tab data. Our method is reproducible, transparent, and
-      scalable, requiring only three data values: the product, the business
-      type and the firm's location. It can be used to explore SME low-carbon
-      transformation climate risks or inform financial decision-making. For
-      further information on how to use the research data, please watch the two
-      online webinars below.
+      [This
+      paper](https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/pub)
+      introduces the method behind *tilt* which is used to derive climate
+      indicators for SMEs. We present two indicators: a relative emission
+      indicator, based on product emission intensity, and a transition risk
+      indicator, assessing risks from the low-carbon transition, based
+      on sector-specific decarbonisation targets and emission intensity
+      data. These indicators, built using Life Cycle Assessment (LCA) and
+      climate scenario data, are applied to 250,000 firms across five European
+      countries, creating the research data that can be requested at the tab
+      Data. Our method is reproducible, transparent, and scalable, requiring
+      only three data values: the product, the business type and the firm's
+      location. It can be used to explore SMEs' climate profiles  or inform
+      financial decision-making. For further information on how to use the
+      research data, please watch the two online webinars below.
 
   dictionary:
     header: "Dictionary"
