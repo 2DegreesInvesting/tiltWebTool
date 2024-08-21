@@ -9,7 +9,7 @@
       
       
       $p2
-      <p><em>tilt</em> (Transforming in a Low Carbon Transition) is our data analytics solution designed to provide financial institutions with critical climate data, enabling them to offer SMEs the financing and knowledge essential for green transformation.</p>
+      <p><em>tilt</em> (Transforming in a Low Carbon Transition) is our data analytics solution designed to provide financial institutions with critical SME climate data, enabling them to offer SMEs the financing and knowledge essential for green transformation.</p>
       
       
       $p3
