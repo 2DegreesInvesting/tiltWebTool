@@ -2,7 +2,7 @@ default:
 
   card1:
     p1: >
-      ### Welcome to tilt's Online Portal
+      ### Welcome to *tilt*'s Online Portal
 
       Our mission is to empower Small and Medium Enterprises (SMEs) across
       the EU and beyond with the funding and expertise needed to thrive in
@@ -29,7 +29,7 @@ default:
 
   card2:
     p1: >
-      ### What You’ll Find on This Website
+      ### What You'll Find on This Website
 
       <ul>
         <li><strong>Research Data</strong>: Access research data that is available for non-commercial use.</li>
