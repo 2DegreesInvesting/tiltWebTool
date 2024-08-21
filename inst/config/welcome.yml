@@ -10,7 +10,7 @@ default:
 
     p2: >
       *tilt* (Transforming in a Low Carbon Transition) is our data analytics
-      solution designed to provide financial institutions with critical
+      solution designed to provide financial institutions with critical SME
       climate data, enabling them to offer SMEs the financing and knowledge
       essential for green transformation.
 
@@ -34,7 +34,7 @@ default:
       <ul>
         <li><strong>Research Data</strong>: Access research data that is available for non-commercial use.</li>
         <li><strong>Data Dictionary</strong>: Read detailed descriptions of the tilt research data variables.</li>
-        <li><strong><em>tilt</em>'s Methodology</strong>: Explore our approach through training videos and our methodology document.</li>
+        <li><strong><em>tilt</em>'s Method</strong>: Explore our approach through training videos and our method document.</li>
         <li><strong>Climate Action Guide</strong>: Discover our climate action guide, which collects further climate action information from SMEs.</li>
       </ul>
 
@@ -52,7 +52,7 @@ default:
       These tools were developed under the CB-PASTAX project, which is co-funded
       by the European Union. We extend our gratitude to the three SMEs and five
       EU banks who participated in testing, as well as the 21 banks whose
-      valuable input shaped the *tilt* methodology.
+      valuable input shaped the *tilt* method.
 
     p3: >
       <img src=https://github.com/user-attachments/assets/63b45902-123f-4045-98fb-f91d4a4bbfbe width=300>

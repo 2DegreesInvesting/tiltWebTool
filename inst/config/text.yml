@@ -1,32 +1,10 @@
 default:
 
-  welcome:
-    body: >
-      ### Welcome to tilt's Online Portal
-
-      Our mi ssion is to empower Small and Medium Enterprises (SMEs) across
-      the EU and beyond with the funding and expertise needed to thrive in
-      a net-zero future by 2050.
-
-      tilt (Transforming in a Low Carbon Transition) is our data analytics
-      solution designed to provide financial institutions with critical
-      climate data, enabling them to offer SMEs the financing and knowledge
-      essential for green transformation.
-
-      Our goal is to drive investment in climate mitigation and adaptation
-      by equipping financial institutions with the insights needed to provide
-      SMEs with targeted financing.
-
-      This app covers all our work over the years under the CB-PASTAX
-      grant. For applications beyond research, please visit www.tiltSMEs.org.
-
-      Watch this video to learn more about tilt.
-
   method:
     header: "Method"
     body: >
       [This paper](https://docs.google.com/document/d/14syERZ-t1nzZaiotL77zcvKVqoJ_47NA/pub)
-      introduces a methodology to derive climate indicators for SMEs. We present
+      introduces a method to derive climate indicators for SMEs. We present
       two indicators: a "relative emission indicator", based on product
       emission intensity, and a "transition risk indicator", assessing risks
       from the low-carbon transition. These indicators, built using Life Cycle
@@ -35,9 +13,9 @@ default:
       requested at the tab data. Our method is reproducible, transparent, and
       scalable, requiring only three data values: the product, the business
       type and the firm's location. It can be used to explore SME low-carbon
-      transformation climate risks or inform financial decision-making. Please
-      find our methodology here. For further information on how to use the
-      research data, please watch the two online webinars below.
+      transformation climate risks or inform financial decision-making. For
+      further information on how to use the research data, please watch the two
+      online webinars below.
 
   dictionary:
     header: "Dictionary"
