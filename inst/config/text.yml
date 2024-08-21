@@ -1,17 +1,26 @@
 default:
 
   welcome:
-    header: "Welcome to *tilt*'s online portal"
     body: >
-      *tilt* is a database designed to provide detailed insights into firms,
-      primarily focusing on small and medium enterprises (SMEs). It offers
-      extensive information on their climate profiles and transition risks
-      associated with evolving environmental standards. Recognising that the
-      creation of climate data involves a series of crucial decisions that
-      significantly influence outcomes, *tilt* aims to empower its users to
-      independently take these decisions. It allows them to thoughtfully consider
-      these decisions and customise methodological choices to best suit their
-      specific needs.
+      ### Welcome to tilt's Online Portal
+
+      Our mi ssion is to empower Small and Medium Enterprises (SMEs) across
+      the EU and beyond with the funding and expertise needed to thrive in
+      a net-zero future by 2050.
+
+      tilt (Transforming in a Low Carbon Transition) is our data analytics
+      solution designed to provide financial institutions with critical
+      climate data, enabling them to offer SMEs the financing and knowledge
+      essential for green transformation.
+
+      Our goal is to drive investment in climate mitigation and adaptation
+      by equipping financial institutions with the insights needed to provide
+      SMEs with targeted financing.
+
+      This app covers all our work over the years under the CB-PASTAX
+      grant. For applications beyond research, please visit www.tiltSMEs.org.
+
+      Watch this video to learn more about tilt.
 
   method:
     header: "Method"

@@ -1,0 +1,65 @@
+default:
+
+  card1:
+    p1: >
+      ### Welcome to tilt's Online Portal
+
+      Our mission is to empower Small and Medium Enterprises (SMEs) across
+      the EU and beyond with the funding and expertise needed to thrive in
+      a net-zero future by 2050.
+
+    p2: >
+      *tilt* (Transforming in a Low Carbon Transition) is our data analytics
+      solution designed to provide financial institutions with critical
+      climate data, enabling them to offer SMEs the financing and knowledge
+      essential for green transformation.
+
+    p3: >
+      Our goal is to drive investment in climate mitigation and adaptation
+      by equipping financial institutions with the insights needed to provide
+      SMEs with targeted financing.
+
+    p4: >
+      This app covers all our work over the years under the
+      [CB-PASTAX](https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE20-GIC-DE-001765/climate-banking-paris-agreement-strategy-taxonomy-assessment)
+      grant. For applications beyond research, please visit www.tiltSMEs.org.
+
+    p5: >
+      Watch this video to learn more about *tilt*.
+
+  card2:
+    p1: >
+      ### What You’ll Find on This Website
+
+      <ul>
+        <li><strong>Research Data</strong>: Access research data that is available for non-commercial use.</li>
+        <li><strong>Data Dictionary</strong>: Read detailed descriptions of the tilt research data variables.</li>
+        <li><strong><em>tilt</em>'s Methodology</strong>: Explore our approach through training videos and our methodology document.</li>
+        <li><strong>Climate Action Guide</strong>: Discover our climate action guide, which collects further climate action information from SMEs.</li>
+      </ul>
+
+  card3:
+    p1: >
+      #### We Value Your Feedback
+
+      We strive for transparency and welcome input from financial institutions,
+      researchers, and NGOs. Join the *tilt* community and share your feedback
+      [here](FIXME).
+
+    p2: >
+      #### Acknowledgement
+
+      These tools were developed under the CB-PASTAX project, which is co-funded
+      by the European Union. We extend our gratitude to the three SMEs and five
+      EU banks who participated in testing, as well as the 21 banks whose
+      valuable input shaped the *tilt* methodology.
+
+    p3: >
+      <img src=https://github.com/user-attachments/assets/63b45902-123f-4045-98fb-f91d4a4bbfbe width=300>
+
+    p4: >
+      <p style="color:gray;"><i> Views and opinions expressed are however those
+      of the author(s) only and do not necessarily reflect those of the European
+      Union or CINEA. Neither the European Union nor the granting authority can
+      be held responsible for them.</i></p>
+

@@ -18,10 +18,16 @@ run_app <- function(db = here::here("db")) {
   )
 
   welcome_tab <- nav_panel(
-    fmt_title(welcome_id()),
+    fmt_title(welcome_title()),
     card(
-      text_card(welcome_id()),
-      card(iframe(welcome_id()))
+      welcome_text("card1"),
+      iframe(welcome_id())
+    ),
+    card(
+      welcome_text("card2")
+    ),
+    card(
+      welcome_text("card3")
     )
   )
 

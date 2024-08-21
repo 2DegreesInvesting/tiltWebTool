@@ -3,5 +3,5 @@ test_that("fails gracefully", {
 })
 
 test_that("returns a bslib_fragment", {
-  expect_s3_class(iframe("welcome"), "shiny.tag")
+  expect_s3_class(iframe(welcome_id()), "shiny.tag")
 })
