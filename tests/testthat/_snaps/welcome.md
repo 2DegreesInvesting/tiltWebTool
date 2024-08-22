@@ -4,7 +4,7 @@
       welcome_text("card1")
     Output
       $p1
-      <h3>Welcome to tilt's Online Portal</h3>
+      <h3>Welcome to <em>tilt</em>'s Online Portal</h3>
       <p>Our mission is to empower Small and Medium Enterprises (SMEs) across the EU and beyond with the funding and expertise needed to thrive in a net-zero future by 2050.</p>
       
       
