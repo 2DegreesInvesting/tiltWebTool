@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9077 (2024-08-23)
+
+* Use renv (#238).
+
 # tiltWebTool 0.0.0.9076 (2024-08-23)
 
 * Use a link to a 'Feedback' form (#236).
