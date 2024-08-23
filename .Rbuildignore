@@ -13,3 +13,4 @@
 ^\.renvignore$
 ^Dockerfile$
 ^db$
+^codecov\.yml$

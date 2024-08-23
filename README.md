@@ -8,6 +8,8 @@
 [![R-CMD-check](https://github.com/2DegreesInvesting/tiltWebTool/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/2DegreesInvesting/tiltWebTool/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test
+coverage](https://codecov.io/gh/2DegreesInvesting/tiltWebTool/graph/badge.svg)](https://app.codecov.io/gh/2DegreesInvesting/tiltWebTool)
 <!-- badges: end -->
 
 The goal of tiltWebTool is to help you use tilt software from the web
