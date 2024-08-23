@@ -1,31 +1,26 @@
-# TODO: DRY
-
-pick_emission <- function(data, level = level_choices()) {
-  level <- match.arg(level)
-
-  switch(level,
-    "product" = select(data, cols_product_emission()),
-    "company" = select(data, cols_company_emission()),
-    stop("Unknown level: ", level)
-  )
+pick_emission <- function(data, level) {
+  pick_level_indicator(data, level, indicator = "emission")
 }
 
-pick_sector <- function(data, level = level_choices()) {
-  level <- match.arg(level)
-
-  switch(level,
-    "product" = select(data, cols_product_sector()),
-    "company" = select(data, cols_company_sector()),
-    stop("Unknown level: ", level)
-  )
+pick_sector <- function(data, level) {
+  pick_level_indicator(data, level, indicator = "sector")
 }
 
-pick_transition_risk <- function(data, level = level_choices()) {
+pick_transition_risk <- function(data, level) {
+  pick_level_indicator(data, level, indicator = "transition_risk")
+}
+
+pick_level_indicator <- function(data,
+                                 level = level_choices(),
+                                 indicator = indicator_choices()) {
   level <- match.arg(level)
+  indicator <- match.arg(indicator)
+
+  cols_product <- get(paste0("cols_product_", indicator))
+  cols_company <- get(paste0("cols_company_", indicator))
 
   switch(level,
-    "product" = select(data, cols_product_transition_risk()),
-    "company" = select(data, cols_company_transition_risk()),
-    stop("Unknown level: ", level)
+    "product" = select(data, cols_product()),
+    "company" = select(data, cols_company())
   )
 }
