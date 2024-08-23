@@ -1,13 +1,13 @@
 default:
 
- welcome:
-    header: "Introduction"
-    src: "https://www.youtube.com/embed/5lTpwTqgj_0?si=zNYZNlOyGYMnqfSZ"
-    width: 560
-    height: 315
+  welcome:
+     header: "Introduction"
+     src: "https://www.youtube.com/embed/5lTpwTqgj_0?si=zNYZNlOyGYMnqfSZ"
+     width: 560
+     height: 315
 
- method:
-    header: "Method"
-    src: "https://www.youtube.com/embed/WXNCYmXq7nw?si=xqGETa2mOsGSELg8"
-    width: 560
-    height: 315
+  method:
+     header: "Method"
+     src: "https://www.youtube.com/embed/WXNCYmXq7nw?si=xqGETa2mOsGSELg8"
+     width: 560
+     height: 315
