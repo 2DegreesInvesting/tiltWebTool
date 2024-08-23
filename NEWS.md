@@ -1,5 +1,25 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9077 (2024-08-23)
+
+* Use renv (#238).
+
+# tiltWebTool 0.0.0.9076 (2024-08-23)
+
+* Use a link to a 'Feedback' form (#236).
+* Add placeholder for second video (#233).
+* Add a link to tilt-redirect (#232).
+* Polish style for consistency (#228).
+* Update content under 'Climate Action Guide' (#226).
+* Update tab 'Method' (#225).
+* Update welcome.yml > card3 (#224).
+* Add 'SME' (#223).
+* Rename tab to 'Welcome' (#222).
+* Update password (#221).
+* Update the tab 'Welcome Page' (#212).
+* Move Method to its own tab (#209).
+* Move Climate Action Guide to its own tab (#207).
+
 # tiltWebTool 0.0.0.9075 (2024-08-20)
 
 * Update the text under "Methodology" (@AnneSchoenauer #204).
