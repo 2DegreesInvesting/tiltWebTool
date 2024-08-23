@@ -35,7 +35,8 @@ run_app <- function(db = here::here("db")) {
     fmt_title(methodology_id()),
     card(
       text_card(methodology_id()),
-      card(iframe(methodology_id()))
+      card(iframe(paste0(methodology_id(), 1))),
+      card(iframe(paste0(methodology_id(), 2)))
     )
   )
 
