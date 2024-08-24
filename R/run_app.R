@@ -1,5 +1,6 @@
 #' Run the app
 #'
+#' @param user_name String. A `user_name` in inst/config/credentials.yml.
 #' @param db Path to a parquet dataset. To understand the default, consider this:
 #' * Called from /public/, `here::here("db")` yields /public/db/.
 #' * Called from /private/, `here::here("db")` yields /private/db/.
@@ -8,8 +9,8 @@
 #' @export
 #'
 #' @examplesIf interactive()
-#' run_app()
-run_app <- function(db = here::here("db")) {
+#' run_app("toy")
+run_app <- function(user_name = "tilt", db = here::here("db")) {
   login_tab <- nav_panel(
     title = icon("lock"),
     value = "login",
@@ -85,7 +86,7 @@ run_app <- function(db = here::here("db")) {
 
     credentials <- shinyauthr::loginServer(
       id = "login",
-      data = user_base(),
+      data = user_base(user_name),
       user_col = "user",
       pwd_col = "pass",
       sodium_hashed = TRUE,
@@ -173,4 +174,9 @@ run_app <- function(db = here::here("db")) {
   }
 
   shinyApp(ui, server)
+}
+
+# For conveniently launch the app on interactive user during development
+toy <- function() {
+  run_app("toy")
 }
