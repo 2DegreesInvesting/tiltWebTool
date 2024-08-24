@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9078 (2024-08-24)
+
+* `run_app()` gains `user_name` (#240).
+
 # tiltWebTool 0.0.0.9077 (2024-08-23)
 
 * Use renv (#238).
