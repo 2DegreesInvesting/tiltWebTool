@@ -4,16 +4,16 @@
 \alias{run_app}
 \title{Run the app}
 \usage{
-run_app(db = here::here("db"), user_name = "tilt")
+run_app(user_name = "tilt", db = here::here("db"))
 }
 \arguments{
+\item{user_name}{String. A \code{user_name} in inst/config/credentials.yml.}
+
 \item{db}{Path to a parquet dataset. To understand the default, consider this:
 \itemize{
 \item Called from /public/, \code{here::here("db")} yields /public/db/.
 \item Called from /private/, \code{here::here("db")} yields /private/db/.
 }}
-
-\item{user_name}{String. A \code{user_name} in inst/config/credentials.yml.}
 }
 \value{
 Called for its side effect.
@@ -23,6 +23,6 @@ Run the app
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-run_app()
+run_app(user_name = "toy")
 \dontshow{\}) # examplesIf}
 }
