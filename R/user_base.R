@@ -8,6 +8,6 @@ user_base <- function(user_name = c("tilt", "toy")) {
   )
 }
 
-get_password <- function(config = c("tilt", "toy")) {
+get_password <- function(config) {
   config::get("password", config = config, file = config_path("credentials"))
 }
