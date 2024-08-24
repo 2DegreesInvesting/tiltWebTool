@@ -1,4 +1,6 @@
 user_base <- function(user_name = c("tilt", "toy")) {
+  user_name <- match.arg(user_name)
+
   data.frame(
     user = user_name,
     pass = get_password(user_name),
@@ -6,7 +8,6 @@ user_base <- function(user_name = c("tilt", "toy")) {
   )
 }
 
-get_password <- function(user_name = c("tilt", "toy")) {
-  config <- match.arg(user_name)
+get_password <- function(config = c("tilt", "toy")) {
   config::get("password", config = config, file = config_path("credentials"))
 }
