@@ -29,5 +29,5 @@ library(tiltWebTool)
 
 # User Name: toy
 # Password: toy
-run_app()
+run_app("toy")
 ```

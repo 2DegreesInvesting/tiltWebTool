@@ -1,6 +1,48 @@
 # guide
 
     Code
+      home_id()
+    Output
+      [1] "tilt"
+
+---
+
+    Code
+      welcome_id()
+    Output
+      [1] "welcome"
+
+---
+
+    Code
+      dataset_id()
+    Output
+      [1] "dataset"
+
+---
+
+    Code
+      dictionary_id()
+    Output
+      [1] "dictionary"
+
+---
+
+    Code
+      video_id()
+    Output
+      [1] "video"
+
+---
+
+    Code
+      methodology_id()
+    Output
+      [1] "method"
+
+---
+
+    Code
       guide_id()
     Output
       [1] "climate_action_guide"
@@ -15,7 +57,7 @@
 ---
 
     Code
-      out[["children"]][[1]]
+      text_card(guide_id())[["children"]][[1]]
     Output
       <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
         <div class="card-header"><p>Climate action guide</p>
