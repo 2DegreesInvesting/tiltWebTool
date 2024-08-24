@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examplesIf interactive()
-#' run_app(user_name = "toy")
+#' run_app("toy")
 run_app <- function(user_name = "tilt", db = here::here("db")) {
   login_tab <- nav_panel(
     title = icon("lock"),

@@ -23,6 +23,6 @@ Run the app
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-run_app(user_name = "toy")
+run_app("toy")
 \dontshow{\}) # examplesIf}
 }
