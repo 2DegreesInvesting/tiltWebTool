@@ -252,14 +252,14 @@
     },
     "digest": {
       "Package": "digest",
-      "Version": "0.6.36",
+      "Version": "0.6.37",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "fd6824ad91ede64151e93af67df6376b"
+      "Hash": "33698c4b3127fc9f506654607fb73676"
     },
     "downlit": {
       "Package": "downlit",
@@ -546,6 +546,18 @@
         "askpass"
       ],
       "Hash": "2bcca3848e4734eb3b16103bc9aa4b8e"
+    },
+    "pak": {
+      "Package": "pak",
+      "Version": "0.7.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "tools",
+        "utils"
+      ],
+      "Hash": "93288e19455e09f590b56db4d50248fe"
     },
     "pillar": {
       "Package": "pillar",
