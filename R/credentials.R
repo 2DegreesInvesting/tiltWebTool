@@ -7,7 +7,7 @@ user_base <- function() {
 }
 
 get_credentials <- function(value) {
-  file <- config_path("credentials.txt")
+  file <- config_path("credentials")
   config <- Sys.getenv("tiltWebTool.password")
   config::get(value, config = config, file = file)
 }
