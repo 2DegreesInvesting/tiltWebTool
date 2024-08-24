@@ -1,4 +1,4 @@
-user_base <- function(user_name = "tilt") {
+user_base <- function(user_name = c("tilt", "toy")) {
   data.frame(
     user = user_name,
     pass = get_password(user_name),
