@@ -1,4 +1,4 @@
-# the dicitionary URL remains the same
+# get_dictionary() yields the same URL
 
     Code
       get_dictionary("url")
