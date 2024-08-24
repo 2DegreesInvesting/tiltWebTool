@@ -9,3 +9,7 @@ test_that("is sentisitve to user_name", {
 test_that("is a data frame", {
   expect_s3_class(user_base("tilt"), "data.frame")
 })
+
+test_that("rejects invalid user_name", {
+  expect_snapshot(error = TRUE, user_base("bad"))
+})
