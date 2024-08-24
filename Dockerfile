@@ -1,14 +1,16 @@
-FROM rocker/shiny:4.4.1
+FROM rocker/r-ver:4.4.1
 
-COPY . /srv/shiny-server/app
+COPY . /app
 
-WORKDIR /srv/shiny-server/app
+WORKDIR /app
 
 RUN Rscript -e "install.packages('pak'); pak::pak()"
 
-# Port 8080 makes it easy to also deploy on Google Cloud Run
-# docker build -t app .
-# docker run --rm -ti -p 8080:8080 rocker/shiny
+# Google Cloud Run likes this port
 EXPOSE 8080
 
 ENTRYPOINT ["Rscript","app.R"]
+
+# You may test locally at http://0.0.0.0:8080/ with:
+# docker build -t app .
+# docker run --rm -d -p 8080:8080 app
