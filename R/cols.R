@@ -44,8 +44,7 @@ cols_product_emission <- function() {
     cols_product_all(),
     "emission_category",
     "emission_rank",
-    "grouping_emission",
-    "co2_footprint"
+    "grouping_emission"
   )
 }
 
@@ -123,8 +122,7 @@ cols_company_emission <- function() {
     "emission_rank_avg_best_case",
     "emission_rank_avg_worst_case",
     "emission_rank_NA_share",
-    "grouping_emission",
-    "co2e_avg"
+    "grouping_emission"
   )
 }
 
