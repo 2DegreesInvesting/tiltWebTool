@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltWebTool 0.0.0.9080 (2024-08-27)
+
+* The columns `co2_footprint` and `co2_avg` are now gone (#246).
+
 # tiltWebTool 0.0.0.9079 (2024-08-24)
 
 * Dockerfile and app.R are now more simlar to tiltWebToolData (#241).
