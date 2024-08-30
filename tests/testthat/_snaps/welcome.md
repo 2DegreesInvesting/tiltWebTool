@@ -17,7 +17,7 @@
       
       
       $p4
-      <p>This app covers all our work over the years under the CB-PASTAX grant. For applications beyond research, please visit <a href="http://www.tiltSMEs.org">www.tiltSMEs.org</a>.</p>
+      <p>This app covers all our work over the years under the <a href="https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE20-GIC-DE-001765/climate-banking-paris-agreement-strategy-taxonomy-assessment">CB-PASTAX</a> grant. For applications beyond research, please visit <a href="http://www.tiltSMEs.org">www.tiltSMEs.org</a>.</p>
       
       
       $p5
