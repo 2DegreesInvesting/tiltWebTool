@@ -128,7 +128,7 @@ when changes are made.
 * Show row number. This helps the users know if they are seeing all the data that
 matches their selection criteria (#154).
 
-# tiltWebTool 0.0.0.9051 (2024-07-26)
+# tiltWebTool 0.0.0.9052 (2024-07-26)
 
 * The possible number of rows are now clearly defined by the range of the input
 slider (#153).
