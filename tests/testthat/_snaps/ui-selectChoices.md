@@ -21,7 +21,7 @@
     Code
       selectChoices()
     Condition
-      Error in `selectChoices()`:
+      Error in `paste0()`:
       ! argument "id" is missing, with no default
 
 ---

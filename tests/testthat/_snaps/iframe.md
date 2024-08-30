@@ -3,6 +3,6 @@
     Code
       iframe()
     Condition
-      Error in `iframe()`:
+      Error in `config::get()`:
       ! argument "section" is missing, with no default
 
