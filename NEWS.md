@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# tiltWebTool 0.0.0.9082 (2024-09-06)
+
+- Update link to Data paper in text.yml file (#261).
+
 # tiltWebTool 0.0.0.9081 (2024-08-30)
 
 * Remove a link from welcome.yml file.
