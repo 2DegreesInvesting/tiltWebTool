@@ -4,7 +4,7 @@ default:
     header: "Method"
     body: >
       [This
-      paper](https://docs.google.com/document/d/1pmmNk-j8Bhr0iTZFiR0e_7DV_MglMlCL/pub)
+      paper](https://docs.google.com/document/d/1pmmNk-j8Bhr0iTZFiR0e_7DV_MglMlCL/edit#heading=h.z337ya)
       introduces the method behind *tilt* which is used to derive climate
       indicators for SMEs. We present two indicators: a relative emission
       indicator, based on product emission intensity, and a transition risk
