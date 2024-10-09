@@ -18,14 +18,14 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Mauro Lepore \email{maurolepore@gmail.com} (\href{https://orcid.org/0000-0002-1986-7988}{ORCID})
+\strong{Maintainer}: Kalash Singhal \email{kalash@2degrees-investing.org}
 
 Authors:
 \itemize{
+  \item Mauro Lepore \email{maurolepore@gmail.com} (\href{https://orcid.org/0000-0002-1986-7988}{ORCID})
   \item Anne Schoenauer \email{anne.schoenauer@2degrees-investing.org} (\href{https://orcid.org/0000-0002-4576-8799}{ORCID})
   \item Tilman Trompke \email{tilman@2degrees-investing.org} (\href{https://orcid.org/0009-0003-3351-5131}{ORCID})
   \item Linda Delacombaz \email{linda@2degrees-investing.org}
-  \item Kalash Singhal \email{kalash@2degrees-investing.org}
 }
 
 Other contributors:
