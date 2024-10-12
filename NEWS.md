@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# tiltWebTool 0.0.0.9084 (2024-10-12)
+
+- Remove link on climate action guide in link.yml file (#266).
+
 # tiltWebTool 0.0.0.9083 (2024-09-06)
 
 - Update link on climate action guide in link.yml file (#262).
