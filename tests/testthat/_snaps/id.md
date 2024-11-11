@@ -52,7 +52,7 @@
     Code
       get_link(guide_id())
     Output
-      <a href="">Download the climate action guide</a>
+      <a href="https://github.com/user-attachments/files/17699269/Climate_Action_Questionnaire_tilt_online_portal.xlsx">Download the climate action guide</a>
 
 ---
 
